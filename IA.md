@@ -2,29 +2,30 @@
 
 Source: wavelength-clone (React+Vite clone of the original marketing site; link omitted from this repo), documented from the actual src/ codebase
 Status: **measured-from-repo**
-48 routes · 9 templates · 34 unique sections
+47 routes · 9 templates · 34 unique sections
+(47 concrete routes + 1 catch-all route — see meta.routeAccountingNote in ia.json for why these are counted separately)
 
 > Generated from `ia.json` by `build.mjs`. Edit the JSON, not this file.
 
 ## Shape of the site
 
-The largest 3 templates (Blog post, Case study, Legal) account for 41 of 48 routes (85%). The remaining 7 routes span 6 templates.
+The largest 3 templates (Blog post, Case study, Legal) account for 41 of 47 routes (87%). The remaining 6 routes span 6 templates.
 
 | template | routes | share |
 |---|---:|---:|
-| Blog post | 21 | 44% |
+| Blog post | 21 | 45% |
 | Case study | 18 | 38% |
 | Legal | 2 | 4% |
-| Not found | 2 | 4% |
 | Home | 1 | 2% |
 | About | 1 | 2% |
 | Contact | 1 | 2% |
 | Integrations | 1 | 2% |
 | Blog index | 1 | 2% |
+| Not found | 1 | 2% |
 
 ## Page chrome
 
-**48 routes carry chrome = `full`** — Home, About, Contact, Integrations, Blog index, Blog post, Case study, Legal, Not found.
+**47 routes carry chrome = `full`** — Home, About, Contact, Integrations, Blog index, Blog post, Case study, Legal, Not found.
 
 ## Sections by reuse
 
@@ -33,11 +34,11 @@ component library or stays local to its page.
 
 | section | category | templates | routes | scope |
 |---|---|---:|---:|---|
-| `shell.announcement-bar` | SHELL | 9 | 48 | Rendered once in App.jsx above the navbar on every route. |
-| `shell.navbar` | SHELL | 9 | 48 | Rendered once in App.jsx on every route (remounted per-route via `key={pathname}` to reset the mobile menu). |
-| `shell.footer` | SHELL | 9 | 48 | Rendered once in App.jsx below <main> on every route. |
-| `shell.cookie-banner` | SHELL | 9 | 48 | Rendered once in App.jsx on every route. |
-| `shell.page-lines` | SHELL | 5 | 43 | Listed as a template-level section only where App.jsx renders the fixed (global) variant — integrations, blog-index, blog-post, case-study, and not-found. On about and contact the same component is instead embedded locally, absolutely positioned inside the hero section markup itself (hero.about / hero.contact), so it isn't a separate top-level slot there; home and legal render neither variant. |
+| `shell.announcement-bar` | SHELL | 9 | 47 | Rendered once in App.jsx above the navbar on every route. |
+| `shell.navbar` | SHELL | 9 | 47 | Rendered once in App.jsx on every route (remounted per-route via `key={pathname}` to reset the mobile menu). |
+| `shell.footer` | SHELL | 9 | 47 | Rendered once in App.jsx below <main> on every route. |
+| `shell.cookie-banner` | SHELL | 9 | 47 | Rendered once in App.jsx on every route. |
+| `shell.page-lines` | SHELL | 5 | 42 | Listed as a template-level section only where App.jsx renders the fixed (global) variant — integrations, blog-index, blog-post, case-study, and not-found. On about and contact the same component is instead embedded locally, absolutely positioned inside the hero section markup itself (hero.about / hero.contact), so it isn't a separate top-level slot there; home and legal render neither variant. |
 | `cta.join` | CTA | 5 | 42 | Appears as the final section on about, blog-index, blog-post, case-study, and integrations templates (not on home, contact, legal, or not-found). |
 | `content.article-body` | CONTENT | 2 | 39 | Both the blog-post and case-study templates. |
 | `cta.ci-cta` | CTA | 2 | 39 | Both the blog-post and case-study templates, directly after the article body. |
@@ -47,7 +48,6 @@ component library or stays local to its page.
 | `content.related-case-studies` | CONTENT | 1 | 18 | Only the case-study template (/case-study/:slug). |
 | `hero.legal` | HERO | 1 | 2 | Only the legal templates (/legals/terms-conditions, /legals/privacy-policy). |
 | `content.legal-body` | CONTENT | 1 | 2 | Only the legal templates. |
-| `content.not-found` | CONTENT | 1 | 2 | Only the not-found template (/404, and any unmatched route, and as a fallback render inside BlogPost/CaseStudy when a slug doesn't resolve). |
 | `hero.home` | HERO | 1 | 1 | Only the home template (/). |
 | `hero.about` | HERO | 1 | 1 | Only the about template (/about). |
 | `hero.contact` | HERO | 1 | 1 | Only the contact template (/contact). |
@@ -66,6 +66,7 @@ component library or stays local to its page.
 | `content.contact-form` | CONTENT | 1 | 1 | Only the contact template (/contact). |
 | `content.integrations-list` | CONTENT | 1 | 1 | Only the integrations template (/integrations). |
 | `content.blog-grid` | CONTENT | 1 | 1 | Only the blog-index template (/blogs). |
+| `content.not-found` | CONTENT | 1 | 1 | Only the not-found template (/404, and any unmatched route, and as a fallback render inside BlogPost/CaseStudy when a slug doesn't resolve). |
 | `cta.closing` | CTA | 1 | 1 | Only the home template (/). |
 
 **8 shared sections** appear in more than one template and belong in a component library.
@@ -204,7 +205,7 @@ until a second caller actually appears.
 
 ### Not found — `template.not-found`
 
-2 routes · `/404`, `*` · chrome: **full**
+1 route · `/404` · chrome: **full**
 
 | # | category | section | |
 |---:|---|---|---|
@@ -223,23 +224,23 @@ _Persistent chrome rendered around every route by App.jsx — announcement bar, 
 
 **`shell.announcement-bar`** — Thin dismissible banner above the navbar (AnnouncementBar in Navbar.jsx).
 
-· Rendered once in App.jsx above the navbar on every route. · appears on 48 routes
+· Rendered once in App.jsx above the navbar on every route. · appears on 47 routes
 
 **`shell.navbar`** — Sticky top navigation: logo, nav links, mobile menu, CTA button.
 
-· Rendered once in App.jsx on every route (remounted per-route via `key={pathname}` to reset the mobile menu). · appears on 48 routes
+· Rendered once in App.jsx on every route (remounted per-route via `key={pathname}` to reset the mobile menu). · appears on 47 routes
 
 **`shell.footer`** — Site footer: link columns, legal links, social links.
 
-· Rendered once in App.jsx below <main> on every route. · appears on 48 routes
+· Rendered once in App.jsx below <main> on every route. · appears on 47 routes
 
 **`shell.cookie-banner`** — Bottom cookie-consent banner, dismissible and persisted client-side.
 
-· Rendered once in App.jsx on every route. · appears on 48 routes
+· Rendered once in App.jsx on every route. · appears on 47 routes
 
 **`shell.page-lines`** — Decorative vertical guide lines overlaid on certain hero sections (PageLines in components/sub/shared.jsx).
 
-· Listed as a template-level section only where App.jsx renders the fixed (global) variant — integrations, blog-index, blog-post, case-study, and not-found. On about and contact the same component is instead embedded locally, absolutely positioned inside the hero section markup itself (hero.about / hero.contact), so it isn't a separate top-level slot there; home and legal render neither variant. · appears on 43 routes
+· Listed as a template-level section only where App.jsx renders the fixed (global) variant — integrations, blog-index, blog-post, case-study, and not-found. On about and contact the same component is instead embedded locally, absolutely positioned inside the hero section markup itself (hero.about / hero.contact), so it isn't a separate top-level slot there; home and legal render neither variant. · appears on 42 routes
 
 ### HERO
 
@@ -351,7 +352,7 @@ _Long-form or listing content specific to a content type — article body, post 
 
 **`content.not-found`** — 404 'page not found' message, full-viewport-height centered.
 
-· Only the not-found template (/404, and any unmatched route, and as a fallback render inside BlogPost/CaseStudy when a slug doesn't resolve). · appears on 2 routes
+· Only the not-found template (/404, and any unmatched route, and as a fallback render inside BlogPost/CaseStudy when a slug doesn't resolve). · appears on 1 routes
 
 ### FAQ
 

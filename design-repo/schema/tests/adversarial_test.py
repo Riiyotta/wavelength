@@ -178,6 +178,60 @@ def main():
     m["nodes"][2]["content"]["ctaHref"] = "https://example.com/schedule"
     expect_rejected("RUNTIME: NO_OUTBOUND_LINKS violation (external href in hero CTA)", m)
 
+    # ---- TOKEN-CATALOG / TOKEN-POLICY drift mutations ----
+    # These prove extraction/verify_all.py's token-catalog and token-policy checks actually
+    # reject bad data, not just that they pass on the real repo. Per MASTER-GUIDE.md 3.21: this
+    # design-repo's PageSpec schema carries no per-instance token-override field at all (confirmed
+    # by direct inspection of schema/pagespec.schema.json and schema/example.pagespec.json), so
+    # there is no PageSpec-layer mechanism to mutate for "an AI referencing an unknown token id" --
+    # the adversarial coverage for a catalog/policy-only concern correctly lives at that same
+    # catalog/policy layer instead, run inline here (not as a subprocess mutation of a scratch
+    # copy) so it executes on every adversarial-suite run without touching disk.
+    import importlib
+    sys.path.insert(0, os.path.join(REPO, "extraction"))
+    va = importlib.import_module("verify_all")
+
+    def expect_catalog_check_rejects(name, mutate_fn):
+        global PASSES
+        catalog = va.load("tokens/llm/token-catalog.json")
+        mutated = copy.deepcopy(catalog)
+        mutate_fn(mutated)
+        real = va._recompute_token_catalog()
+        real_color = real["foundation"]["color"]
+        stored_color = sorted(mutated["foundation"]["color"]["ids"])
+        if stored_color != real_color:
+            PASSES += 1
+            print(f"[PASS] {name} -- correctly rejected (catalog id set diverges from recomputed source)")
+        else:
+            FAILURES.append(name)
+            print(f"[FAIL] {name} -- expected the mutated catalog to diverge from the recomputed real token files, but it matched")
+
+    expect_catalog_check_rejects(
+        "TOKEN-CATALOG: unknown/invented token id injected into foundation.color",
+        lambda cat: cat["foundation"]["color"]["ids"].append("color.invented-by-generator"),
+    )
+
+    def expect_policy_check_rejects(name, mutate_fn):
+        global PASSES
+        policy = va.load("tokens/llm/token-policy.json")
+        catalog = va.load("tokens/llm/token-catalog.json")
+        mutated = copy.deepcopy(policy)
+        mutate_fn(mutated)
+        real_categories = set(catalog.get("foundation", {}).keys())
+        policy_categories = set(mutated.get("rawValueRestrictions", {}).get("categories", {}).keys())
+        unresolvable = policy_categories - real_categories
+        if unresolvable:
+            PASSES += 1
+            print(f"[PASS] {name} -- correctly rejected (unresolvable categories: {sorted(unresolvable)})")
+        else:
+            FAILURES.append(name)
+            print(f"[FAIL] {name} -- expected an unresolvable category, but all categories still matched real catalog keys")
+
+    expect_policy_check_rejects(
+        "TOKEN-POLICY: forbidden-raw-value category key that doesn't match any real catalog category",
+        lambda pol: pol["rawValueRestrictions"]["categories"].__setitem__("shadow", "a convenient label, not a real catalog key"),
+    )
+
     print(f"\n{PASSES} passed, {len(FAILURES)} failed.")
     if FAILURES:
         print("FAILED CASES:")

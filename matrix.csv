@@ -1,9 +1,9 @@
 section,category,templates,routes,Home,About,Contact,Integrations,Blog index,Blog post,Case study,Legal,Not found
-shell.announcement-bar,SHELL,9,48,x,x,x,x,x,x,x,x,x
-shell.navbar,SHELL,9,48,x,x,x,x,x,x,x,x,x
-shell.footer,SHELL,9,48,x,x,x,x,x,x,x,x,x
-shell.cookie-banner,SHELL,9,48,x,x,x,x,x,x,x,x,x
-shell.page-lines,SHELL,5,43,,,,x,x,x,x,,x
+shell.announcement-bar,SHELL,9,47,x,x,x,x,x,x,x,x,x
+shell.navbar,SHELL,9,47,x,x,x,x,x,x,x,x,x
+shell.footer,SHELL,9,47,x,x,x,x,x,x,x,x,x
+shell.cookie-banner,SHELL,9,47,x,x,x,x,x,x,x,x,x
+shell.page-lines,SHELL,5,42,,,,x,x,x,x,,x
 cta.join,CTA,5,42,,x,,x,x,x,x,,
 content.article-body,CONTENT,2,39,,,,,,x,x,,
 cta.ci-cta,CTA,2,39,,,,,,x,x,,
@@ -13,7 +13,6 @@ hero.case-study,HERO,1,18,,,,,,,x,,
 content.related-case-studies,CONTENT,1,18,,,,,,,x,,
 hero.legal,HERO,1,2,,,,,,,,x,
 content.legal-body,CONTENT,1,2,,,,,,,,x,
-content.not-found,CONTENT,1,2,,,,,,,,,x
 hero.home,HERO,1,1,x,,,,,,,,
 hero.about,HERO,1,1,,x,,,,,,,
 hero.contact,HERO,1,1,,,x,,,,,,
@@ -32,5 +31,6 @@ content.open-roles,CONTENT,1,1,,x,,,,,,,
 content.contact-form,CONTENT,1,1,,,x,,,,,,
 content.integrations-list,CONTENT,1,1,,,,x,,,,,
 content.blog-grid,CONTENT,1,1,,,,,x,,,,
+content.not-found,CONTENT,1,1,,,,,,,,,x
 cta.closing,CTA,1,1,x,,,,,,,,
-ROUTE COUNT,,,48,1,1,1,1,1,21,18,2,2
+ROUTE COUNT,,,47,1,1,1,1,1,21,18,2,1

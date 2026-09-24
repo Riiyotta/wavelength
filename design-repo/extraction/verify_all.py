@@ -11,7 +11,7 @@ scratch-copy test run):
   1. Allowlist parity        -- every id in tokens/llm/component-allowlist.json has a matching
                                  contract file in primitives/, components/, sections/, and vice versa.
   2. Asset-role parity       -- every assetRole referenced from a section/primitive contract has a
-                                 matching entry in tokens/llm/asset-roles.json, and vice versa.
+                                 matching entry in assets/asset-roles.json, and vice versa.
   3. allowlistVersion parity -- registry.manifest.json's allowlistVersion matches
                                  tokens/llm/component-allowlist.json's own allowlistVersion.
   4. Manifest counts recompute -- registry.manifest.json's counts block is recomputed live from
@@ -27,6 +27,18 @@ scratch-copy test run):
   7. No absolute local machine paths anywhere in the repo.
   8. Schema validation of schema/example.pagespec.json (Draft-07, zero errors).
   9. Semantic validator smoke test + full adversarial suite (imports and asserts non-zero pass count).
+  10. Token-catalog parity   -- tokens/llm/token-catalog.json's id lists are recomputed live from the
+                                 real tokens/00-foundation/**, tokens/10-semantic/semantic.json,
+                                 tokens/20-component/component.json, tokens/30-layout/layout.json, and
+                                 tokens/themes/light.json files and compared to the catalog's stored id
+                                 lists -- fails on any addition, removal, or rename the catalog hasn't
+                                 mirrored. Also checks registry.manifest.json's tokenCatalogVersion
+                                 against the catalog's own catalogVersion.
+  11. Token-policy validity  -- tokens/llm/token-policy.json is machine-valid: every
+                                 rawValueRestrictions category key names a real tokens/llm/token-catalog.json
+                                 foundation category (per MASTER-GUIDE.md 3.21's warning against
+                                 unresolvable convenience labels), and registry.manifest.json's
+                                 tokenPolicyVersion matches the policy's own policyVersion.
 """
 import glob
 import json
@@ -102,7 +114,7 @@ def _find_asset_roles(obj, found):
 
 
 def check_asset_role_parity():
-    roles = load("tokens/llm/asset-roles.json")["roles"]
+    roles = load("assets/asset-roles.json")["roles"]
     used = set()
     for path in glob.glob(os.path.join(REPO, "sections", "*.json")) + glob.glob(os.path.join(REPO, "primitives", "*.json")):
         if os.path.basename(path) == "_all.json":
@@ -113,7 +125,7 @@ def check_asset_role_parity():
     declared = set(roles.keys())
     undeclared = used - declared
     if undeclared:
-        fail(f"asset-role parity: role(s) used in a contract but not declared in tokens/llm/asset-roles.json: {sorted(undeclared)}")
+        fail(f"asset-role parity: role(s) used in a contract but not declared in assets/asset-roles.json: {sorted(undeclared)}")
     else:
         ok(f"asset-role parity: all {len(used)} used role(s) are declared (of {len(declared)} total declared)")
 
@@ -313,6 +325,147 @@ def check_no_absolute_paths():
 
 
 # ---------------------------------------------------------------------------
+# 10. Token-catalog parity -- recomputed live from the real token source files
+# ---------------------------------------------------------------------------
+def _recompute_token_catalog():
+    """Rebuild the same id sets tokens/llm/token-catalog.json declares, straight from the
+    real 00-foundation/10-semantic/20-component/30-layout/themes files -- never from the
+    catalog itself, so this can actually catch the catalog drifting from its sources."""
+    color = load("tokens/00-foundation/color.json")
+    typography = load("tokens/00-foundation/typography.json")
+    radius = load("tokens/00-foundation/radius.json")
+    breakpoint_ = load("tokens/00-foundation/breakpoint.json")
+    elevation = load("tokens/00-foundation/elevation.json")
+    icon_size = load("tokens/00-foundation/icon-size.json")
+    motion = load("tokens/00-foundation/motion.json")
+    semantic = load("tokens/10-semantic/semantic.json")
+    component = load("tokens/20-component/component.json")
+    layout = load("tokens/30-layout/layout.json")
+    theme_light = load("tokens/themes/light.json")
+
+    def leaf_ids(prefix, obj):
+        """Flatten a nested dict into dotted leaf ids, e.g. button.primary.light.rest.bg."""
+        out = []
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                out.extend(leaf_ids(f"{prefix}.{k}", v))
+        else:
+            out.append(prefix)
+        return out
+
+    real = {
+        "foundation": {
+            "color": sorted(f"color.{k}" for k in color["colors"]),
+            "typography": sorted(f"typography.{k}" for k in typography["typeScale"]),
+            "radius": sorted(f"radius.{k}" for k in radius["radii"]),
+            "breakpoint": sorted(f"breakpoint.{k}" for k in breakpoint_["breakpoints"]),
+            "elevation": sorted(f"elevation.{k}" for k in elevation["shadows"]),
+            "icon-size": sorted(f"icon-size.{k}" for k in icon_size["sizes"]),
+            "motion": {
+                "easingIds": sorted(f"motion.easings.{k}" for k in motion["easings"]),
+                "springIds": sorted(f"motion.springs.{k}" for k in motion["springs"]),
+                "tweenIds": sorted(f"motion.tweens.{k}" for k in motion["tweens"]),
+            },
+        },
+        "semantic": sorted(
+            f"{cat}.{k}" for cat, v in semantic.items() if cat != "measuredFrom" for k in v
+        ),
+        "component": sorted(
+            id_ for top, v in component.items() if top != "measuredFrom" for id_ in leaf_ids(top, v)
+        ),
+        "layout": sorted(f"{cat}.{k}" for cat, v in layout.items() if cat != "measuredFrom" for k in v),
+        "themeResolvedLight": dict(sorted(theme_light["resolves"].items())),
+    }
+    return real
+
+
+def check_token_catalog_parity():
+    catalog_path = os.path.join(REPO, "tokens", "llm", "token-catalog.json")
+    if not os.path.isfile(catalog_path):
+        fail("token-catalog parity: tokens/llm/token-catalog.json does not exist")
+        return
+    catalog = load("tokens/llm/token-catalog.json")
+    manifest = load("registry.manifest.json")
+
+    if manifest.get("tokenCatalogVersion") != catalog.get("catalogVersion"):
+        fail(f"token-catalog version parity: manifest.tokenCatalogVersion={manifest.get('tokenCatalogVersion')!r} != catalog.catalogVersion={catalog.get('catalogVersion')!r}")
+    else:
+        ok(f"token-catalog version parity: tokenCatalogVersion={manifest.get('tokenCatalogVersion')!r} matches in both files")
+
+    real = _recompute_token_catalog()
+    mismatches = []
+
+    for cat in ("color", "typography", "radius", "breakpoint", "elevation", "icon-size"):
+        stored = sorted(catalog["foundation"][cat]["ids"])
+        actual = real["foundation"][cat]
+        if stored != actual:
+            mismatches.append(f"foundation.{cat}: stored={stored} != recomputed={actual}")
+
+    for key in ("easingIds", "springIds", "tweenIds"):
+        stored = sorted(catalog["foundation"]["motion"][key])
+        actual = real["foundation"]["motion"][key]
+        if stored != actual:
+            mismatches.append(f"foundation.motion.{key}: stored={stored} != recomputed={actual}")
+
+    stored_semantic = sorted(catalog["semantic"]["ids"])
+    if stored_semantic != real["semantic"]:
+        mismatches.append(f"semantic.ids: stored={stored_semantic} != recomputed={real['semantic']}")
+
+    stored_component = sorted(catalog["component"]["ids"])
+    if stored_component != real["component"]:
+        mismatches.append(f"component.ids: stored={stored_component} != recomputed={real['component']}")
+
+    stored_layout = sorted(catalog["layout"]["ids"])
+    if stored_layout != real["layout"]:
+        mismatches.append(f"layout.ids: stored={stored_layout} != recomputed={real['layout']}")
+
+    stored_theme_light = dict(sorted(catalog["semantic"]["resolvedByTheme"]["light"]["values"].items()))
+    if stored_theme_light != real["themeResolvedLight"]:
+        mismatches.append(f"semantic.resolvedByTheme.light.values: stored={stored_theme_light} != recomputed={real['themeResolvedLight']}")
+
+    if mismatches:
+        for m in mismatches:
+            fail(f"token-catalog parity: {m}")
+    else:
+        total = (
+            sum(len(catalog["foundation"][c]["ids"]) for c in ("color", "typography", "radius", "breakpoint", "elevation", "icon-size"))
+            + sum(len(catalog["foundation"]["motion"][k]) for k in ("easingIds", "springIds", "tweenIds"))
+            + len(catalog["semantic"]["ids"]) + len(catalog["component"]["ids"]) + len(catalog["layout"]["ids"])
+        )
+        ok(f"token-catalog parity: {total} token id(s) across foundation/semantic/component/layout, exact match with recomputed source files")
+
+
+# ---------------------------------------------------------------------------
+# 11. Token-policy validity
+# ---------------------------------------------------------------------------
+def check_token_policy_valid():
+    policy_path = os.path.join(REPO, "tokens", "llm", "token-policy.json")
+    if not os.path.isfile(policy_path):
+        fail("token-policy validity: tokens/llm/token-policy.json does not exist")
+        return
+    policy = load("tokens/llm/token-policy.json")
+    manifest = load("registry.manifest.json")
+
+    if manifest.get("tokenPolicyVersion") != policy.get("policyVersion"):
+        fail(f"token-policy version parity: manifest.tokenPolicyVersion={manifest.get('tokenPolicyVersion')!r} != policy.policyVersion={policy.get('policyVersion')!r}")
+    else:
+        ok(f"token-policy version parity: tokenPolicyVersion={manifest.get('tokenPolicyVersion')!r} matches in both files")
+
+    catalog_path = os.path.join(REPO, "tokens", "llm", "token-catalog.json")
+    if not os.path.isfile(catalog_path):
+        fail("token-policy validity: cannot check rawValueRestrictions categories -- tokens/llm/token-catalog.json is missing")
+        return
+    catalog = load("tokens/llm/token-catalog.json")
+    real_categories = set(catalog.get("foundation", {}).keys())
+    policy_categories = set(policy.get("rawValueRestrictions", {}).get("categories", {}).keys())
+    unresolvable = policy_categories - real_categories
+    if unresolvable:
+        fail(f"token-policy validity: rawValueRestrictions category key(s) don't match any real token-catalog.json foundation category: {sorted(unresolvable)}")
+    else:
+        ok(f"token-policy validity: all {len(policy_categories)} rawValueRestrictions categories resolve against real token-catalog.json foundation categories")
+
+
+# ---------------------------------------------------------------------------
 # 8 + 9. Schema validation + semantic/adversarial suite
 # ---------------------------------------------------------------------------
 def check_schema_and_adversarial():
@@ -357,6 +510,8 @@ def main():
     check_citations()
     check_entrypoints_self_contained()
     check_no_absolute_paths()
+    check_token_catalog_parity()
+    check_token_policy_valid()
     check_schema_and_adversarial()
 
     print(f"\n{'='*70}\n{len(FAILURES)} failure(s), {len(WARNINGS)} warning(s)\n{'='*70}")

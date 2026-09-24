@@ -55,7 +55,9 @@ authoritative, machine-checked number.
 ```
 design-repo/
   README.md, CHANGELOG.md, registry.manifest.json
-  tokens/{00-foundation,10-semantic,20-component,30-layout,themes,llm}/
+  tokens/{00-foundation,10-semantic,20-component,30-layout,themes}/
+  tokens/llm/   -- component-allowlist.json, token-catalog.json, token-policy.json
+  assets/       -- asset-roles.json
   primitives/   -- 9 atomic building blocks
   components/   -- 7 composed, still content-agnostic pieces
   sections/     -- 32 real, distinct section types, each with a full content contract
@@ -64,6 +66,25 @@ design-repo/
   schema/{pagespec.schema.json, example.pagespec.json, semantic_validate.py, tests/adversarial_test.py}
   extraction/{measured-values.json, verify_all.py}
 ```
+
+## LLM token contract
+
+`tokens/llm/token-catalog.json` is the single canonical, closed inventory of every
+real token id in this design-repo (115 total, spanning foundation/semantic/component/
+layout) — a generator should consult this one file instead of crawling
+`tokens/00-foundation/**` + `tokens/10-semantic/semantic.json` +
+`tokens/20-component/component.json` + `tokens/30-layout/layout.json` +
+`tokens/themes/light.json` individually. `tokens/llm/token-policy.json` governs how
+the catalog may be used: prefer a semantic token (`text.*`/`surface.*`/`border.*`/
+`accent.*`) over a raw foundation `color.*` id wherever a semantic id exists; never
+emit a raw literal value where a catalog id already covers it; the only permitted
+local override point is the component-token layer; and theme resolution must read
+the active theme from `registry.manifest.json#/defaultTheme`, never hardcode
+`"light"`. This design-repo's `schema/pagespec.schema.json` carries no per-instance
+token-override field on any node (confirmed by direct inspection, not assumed) — so
+enforcement lives entirely at the catalog/policy layer via
+`extraction/verify_all.py`'s drift checks, not at the PageSpec layer, until a future
+schema revision adds such a field.
 
 ## Real, deliberate product constraints baked into this design-repo
 
@@ -95,7 +116,7 @@ design-repo made up:
   logos (Gmail, Slack, HubSpot, Salesforce, Intercom, Linear, Zendesk, etc.),
   testimonial customer logos/names/quotes (real named people at Latchel,
   Lexamica, and Rho), and the Wavelength/Assembly product mark itself are real
-  third-party assets bundled locally. `tokens/llm/asset-roles.json` locks every
+  third-party assets bundled locally. `assets/asset-roles.json` locks every
   one of these to `must-reuse-exact-or-omit` — a generator must never fabricate a
   new "customer testimonial," a new integration-partner logo, or a variation on
   the real brand mark. Omission is always the safe move; invention never is.
@@ -136,9 +157,13 @@ counts recompute + route-coverage check, citation-range validity (every
 top-level `measuredFrom` and every section's `responsive.measuredFrom`;
 internal hard-fail, sibling-app soft-warn when the sibling app tree isn't
 present), `registry.manifest.json` entryPoints self-containment, an
-absolute-local-path sweep, Draft-07 schema validation of the bundled example,
-the semantic validator, and the full adversarial suite — all in one command,
-with real pass/fail output.
+absolute-local-path sweep, token-catalog parity (recomputed live from the real
+token source files, not from the catalog itself), token-policy validity
+(every `rawValueRestrictions` category resolves against a real catalog
+category), Draft-07 schema validation of the bundled example, the semantic
+validator, and the full adversarial suite (26 cases, including 2 catalog/
+policy drift-injection cases) — all in one command, with real pass/fail
+output.
 
 ## Packaging note
 

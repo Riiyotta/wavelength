@@ -1,5 +1,75 @@
 # Changelog
 
+## 1.2.0 -- LLM token-catalog/token-policy layer added, asset-roles relocated, root IA route accounting clarified (external punch-list pass, this session)
+
+Applied an external review's punch list against this design-repo, verifying every item
+against the real files first (per this project's own build discipline) before fixing
+anything. All 8 items reproduced against the real repo -- none were stale or mistaken.
+
+- **Added `tokens/llm/token-catalog.json`** (BLOCKER): the single canonical, closed
+  inventory of every real token id across `tokens/00-foundation/**`,
+  `tokens/10-semantic/semantic.json`, `tokens/20-component/component.json`,
+  `tokens/30-layout/layout.json`, and `tokens/themes/light.json` -- 115 ids total.
+  Gives a generator one file to consult instead of crawling 11 separate token files.
+- **Added `tokens/llm/token-policy.json`** (BLOCKER): semantic-token preference (prefer
+  `text.*`/`surface.*`/`border.*`/`accent.*` over raw `color.*`, with the real,
+  checked exception that typography/radius/breakpoint/elevation/icon-size/motion have
+  no semantic layer in this design-repo), raw-value restrictions keyed to
+  token-catalog.json's own real foundation category names (per this project's own
+  MASTER-GUIDE.md 3.21 caution against inventing unresolvable convenience labels like
+  "typography"/"shadow"), the one legitimate override point (component-token layer),
+  and deterministic theme-resolution order. Explicitly documents that this
+  design-repo's `schema/pagespec.schema.json` carries no per-instance token-override
+  field on any node (confirmed by direct inspection, not assumed) -- so PageSpec-level
+  override enforcement has nothing to validate today; this gap is recorded plainly
+  rather than papered over with an invented field.
+- **Wired both into `registry.manifest.json`** (BLOCKER): new `tokenCatalogVersion`/
+  `tokenPolicyVersion` fields (machine-checked, like `allowlistVersion`), new
+  `entryPoints.tokenCatalog`/`entryPoints.tokenPolicy` keys, and both files added to
+  the `entryPoints.tokens` array.
+- **Added token-catalog parity validation to `extraction/verify_all.py`** (BLOCKER):
+  recomputes the same id sets straight from the real foundation/semantic/component/
+  layout/theme files (never from the catalog itself) and fails on any addition,
+  removal, or rename the catalog hasn't mirrored -- plus a `tokenCatalogVersion`
+  parity check. Proven to actually catch drift with a scratch-copy test: an injected
+  phantom color id and an injected version mismatch were both confirmed to fail the
+  check, then the scratch copy was restored and reconfirmed clean.
+- **Added token-policy validation to `extraction/verify_all.py`** (BLOCKER): checks
+  every `rawValueRestrictions` category key resolves against a real
+  token-catalog.json foundation category (not a made-up label), plus a
+  `tokenPolicyVersion` parity check. Proven with the same scratch-copy drift-injection
+  method (an unresolvable `"shadow"` category key was confirmed to fail the check).
+- **Added adversarial drift-injection cases for unknown token ids / forbidden raw
+  values** (HIGH) to `schema/tests/adversarial_test.py`: since this design-repo's
+  PageSpec schema has no per-instance token-override field to mutate (confirmed per
+  MASTER-GUIDE.md 3.21), the adversarial coverage correctly lives at the catalog/
+  policy layer itself -- one case injects an invented token id into the catalog and
+  asserts the recompute check rejects it, one case injects an unresolvable
+  raw-value-restriction category into the policy and asserts the same. Both run
+  inline on every adversarial-suite invocation (24 → 26 total cases).
+- **Moved `tokens/llm/asset-roles.json` to `assets/asset-roles.json`** (RECOMMENDED)
+  to match this workspace's common handoff structure; every reference across
+  `registry.manifest.json` (including a new `entryPoints.assets` key),
+  `extraction/verify_all.py`, `README.md`, and `CHANGELOG.md` was updated to the new
+  path (verified with a repo-wide grep for the old path returning zero hits after the
+  move) -- the asset-role contract content itself was already correct and unchanged.
+- **Clarified root IA route accounting** (RECOMMENDED): the sibling `ia.json`
+  (outside this design-repo, at the project root) previously counted `totalRoutes: 48`
+  by treating `/404` and the `*` catch-all as two separate routes; this design-repo's
+  own `templates/templates.json` and README already correctly counted 47. Fixed
+  `ia.json`'s `meta.totalRoutes` to 47 with new explicit `totalConcreteRoutes: 47` /
+  `totalCatchAllRoutes: 1` fields and a `routeAccountingNote`, gave the
+  `template.not-found` entry a `catchAllRoutes` array separate from its concrete
+  `routes` array, and regenerated `IA.md`/`matrix.csv` from the corrected JSON via the
+  project's own `build.mjs` (never hand-edited, since `IA.md` states "Generated from
+  `ia.json` by `build.mjs`. Edit the JSON, not this file."). The root project's own
+  `validate.mjs` was re-run and confirmed "All hard invariants reconcile" afterward.
+- All 4 mandatory verification steps re-run after every fix, not just once at the
+  end: schema validation (0 errors), the full adversarial suite (26/26 passed,
+  including the 2 new cases), a self-containment scratch-copy run (used to prove the
+  drift-injection tests above, then restored clean), and a fresh, clean zip
+  (0 `__MACOSX`/`.DS_Store` entries, regenerated last after all fixes).
+
 ## 1.1.0 -- responsive contract added (recheck pass, this session)
 
 A recheck against this project's own build methodology's pre-ship checklist
@@ -65,7 +135,7 @@ Built from scratch against the real `wavelength-clone` app source, `tailwind.con
   absolute-local-path sweep, schema validation, and the full adversarial suite --
   each drift check proven against a scratch copy with an injected bad value before
   being trusted on the real repo (see the build session's verification transcript).
-- `tokens/llm/asset-roles.json`: 11 closed asset roles with explicit AI-generation
+- `assets/asset-roles.json`: 11 closed asset roles with explicit AI-generation
   policy (`may-generate-new` / `must-reuse-exact-or-omit`), covering the real
   compliance-sensitive cases (customer logos, customer photos/quotes, partner
   integration logos) as `must-reuse-exact-or-omit` -- never inventable.

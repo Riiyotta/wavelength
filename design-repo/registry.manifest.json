@@ -1,9 +1,11 @@
 {
   "repositoryId": "wavelength-clone-design-repo",
-  "repositoryVersion": "1.1.0",
+  "repositoryVersion": "1.2.0",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
-  "versionFieldNote": "allowlistVersion is machine-checked: extraction/verify_all.py fails the run if it drifts from tokens/llm/component-allowlist.json's own allowlistVersion field. repositoryVersion and pageSpecVersion are documentation-only, hand-maintained markers -- nothing automatically enforces them; they exist for human changelog tracking only.",
+  "tokenCatalogVersion": "1.0.0",
+  "tokenPolicyVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion is machine-checked: extraction/verify_all.py fails the run if it drifts from tokens/llm/component-allowlist.json's own allowlistVersion field. tokenCatalogVersion is likewise machine-checked against tokens/llm/token-catalog.json's own catalogVersion field, and the catalog's full id set is separately recomputed from the real tokens/00-foundation/**, tokens/10-semantic/semantic.json, tokens/20-component/component.json, tokens/30-layout/layout.json, and tokens/themes/light.json files on every run (fails on drift). tokenPolicyVersion is checked against tokens/llm/token-policy.json's own policyVersion field, and the policy's rawValueRestrictions category keys are checked to exist as real tokens/llm/token-catalog.json foundation categories. repositoryVersion and pageSpecVersion are documentation-only, hand-maintained markers -- nothing automatically enforces them; they exist for human changelog tracking only.",
   "status": "design-review-pending",
   "productionApproved": false,
   "defaultTheme": "light",
@@ -12,7 +14,7 @@
   ],
   "sourceProject": {
     "name": "wavelength-clone",
-    "description": "Pixel-fidelity React 18 + Vite 5 + Tailwind v3 clone of the original marketing site (an AI-native CRM product, formerly branded 'Assembly'; link omitted from this repo). Real, live company/product -- see tokens/llm/asset-roles.json and README.md for compliance/licensing guidance.",
+    "description": "Pixel-fidelity React 18 + Vite 5 + Tailwind v3 clone of the original marketing site (an AI-native CRM product, formerly branded 'Assembly'; link omitted from this repo). Real, live company/product -- see assets/asset-roles.json and README.md for compliance/licensing guidance.",
     "frameworkVersions": {
       "react": "18.x",
       "vite": "5.x",
@@ -45,8 +47,12 @@
       "tokens/30-layout",
       "tokens/themes/light.json",
       "tokens/llm/component-allowlist.json",
-      "tokens/llm/asset-roles.json"
+      "tokens/llm/token-catalog.json",
+      "tokens/llm/token-policy.json"
     ],
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "assets": "assets/asset-roles.json",
     "primitives": "primitives/",
     "components": "components/",
     "sections": "sections/",

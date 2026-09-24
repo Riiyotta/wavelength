@@ -2,7 +2,10 @@
   "meta": {
     "source": "wavelength-clone (React+Vite clone of the original marketing site; link omitted from this repo), documented from the actual src/ codebase",
     "status": "measured-from-repo",
-    "totalRoutes": 48,
+    "totalRoutes": 47,
+    "totalConcreteRoutes": 47,
+    "totalCatchAllRoutes": 1,
+    "routeAccountingNote": "47 concrete, distinct sitemap URLs, plus 1 catch-all (src/App.jsx's path=\"*\" route, which renders the same NotFound component as the literal /404 path but is not itself a distinct sitemap URL). An earlier version of this file counted 48 by treating /404 and * as two separate routes; design-repo/templates/templates.json and design-repo/README.md's 'A note on the route count' independently derived 47 the same way this field now does. totalRoutes reflects the 47 real, distinct URLs -- the authoritative, machine-checked number also used by design-repo/extraction/verify_all.py's route-coverage check.",
     "totalTemplates": 9
   },
   "categories": {
@@ -355,11 +358,15 @@
     {
       "id": "template.not-found",
       "name": "Not found",
-      "routeCount": 2,
+      "routeCount": 1,
+      "catchAllRouteCount": 1,
       "routes": [
-        "/404",
+        "/404"
+      ],
+      "catchAllRoutes": [
         "*"
       ],
+      "routeAccountingNote": "1 concrete route (/404) plus 1 catch-all (src/App.jsx's path=\"*\", which renders the same NotFound component but is not a distinct sitemap URL -- see meta.routeAccountingNote at the top of this file). routeCount counts only the concrete route, matching design-repo/templates/templates.json's routeCount convention; the catch-all is tracked separately so it is never silently folded into or dropped from the total.",
       "routePattern": null,
       "chrome": "full",
       "sections": [

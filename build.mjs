@@ -26,6 +26,9 @@ L.push('');
 if (meta.source) L.push(`Source: ${meta.source}${meta.mirror ? ` · ${meta.mirror}` : ''}`);
 if (meta.status) L.push(`Status: **${meta.status}**${meta.productionApproved !== undefined ? ` · production approved: **${meta.productionApproved}**` : ''}`);
 L.push(`${meta.totalRoutes} routes · ${meta.totalTemplates} templates · ${Object.keys(sections).length} unique sections`);
+if (meta.totalCatchAllRoutes) {
+  L.push(`(${meta.totalConcreteRoutes} concrete route${meta.totalConcreteRoutes === 1 ? '' : 's'} + ${meta.totalCatchAllRoutes} catch-all route${meta.totalCatchAllRoutes === 1 ? '' : 's'} — see meta.routeAccountingNote in ia.json for why these are counted separately)`);
+}
 L.push('');
 L.push('> Generated from `ia.json` by `build.mjs`. Edit the JSON, not this file.');
 L.push('');
