@@ -1,0 +1,368 @@
+{
+  "source": "original marketing site (reference omitted from this repo)",
+  "note": "Assets added by the subpage recon (2026-09-24). Paths are relative to public/ (serve as /assets/...). Home-page assets are listed in ASSET_MANIFEST.json and are not repeated here. Sizes are natural pixel sizes.",
+  "images": {
+    "/assets/images/1eVahYVFxvy4F0rN19A3EhOqjLc.png": {
+      "size": "320x320",
+      "use": "/about The Team: Y Combinator logo 40x40 (32 @P), contain, r4"
+    },
+    "/assets/images/3IEZBrREHwPvhMW0nkAp2jvHEo.png": {
+      "size": "200x200",
+      "use": "/about The Team: Intuit logo"
+    },
+    "/assets/images/40V2YTi7ouK9RIAqsmTiMKppQcs.png": {
+      "size": "800x1012",
+      "use": "/about The Team: Convoy logo"
+    },
+    "/assets/images/4cg2NEy3YbZwGJxueiAbzbVwLVs.jpg": {
+      "size": "3024x4032",
+      "use": "/about hero: left team photo (cover, r8) inside frame"
+    },
+    "/assets/images/7B7ZrreucQrygOVcmetA7S0dc.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Email; /integrations hero floating icon: Gmail"
+    },
+    "/assets/images/8r7sztvIXadESA8pCpk8slX4XTc.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Hubspot; /integrations hero floating icon: Hubspot"
+    },
+    "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png": {
+      "size": "1848x1120",
+      "use": "Case-study CMS cover (\"Logoipsum\" placeholder): hero 400x242.4 r8 and Related cards 320x193.9 r8"
+    },
+    "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png": {
+      "size": "1600x1200",
+      "use": "Blog CMS image: featured card on /blogs (420x280 cover r8) and in-body image on every blog post"
+    },
+    "/assets/images/BAbgKlPGETJLTtNr8COGQHets0E.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Google Drive"
+    },
+    "/assets/images/CzSofVwEgTZxiejLbyBAGwUpyX8.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Salesforce; /integrations hero floating icon: Salesforce"
+    },
+    "/assets/images/DvjFZWt9lG0xPklQXqFQZt5Ks.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Jira"
+    },
+    "/assets/images/EpfxAbG2B3wdRN6unPgp3fVvw0.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Confluence"
+    },
+    "/assets/images/GWd2FFmDQiiSnZqujh4CQRdnGA.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Notion"
+    },
+    "/assets/images/HKr6is74RNqsjbjd2h4gOyYPU.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Microsoft Teams"
+    },
+    "/assets/images/PhOrHsyRPTwVeC99j0wnf9Q4Pk.png": {
+      "size": "1420x3144",
+      "use": "Decorative vertical track strip: /blogs list-card bottom (rotated 90deg) and left edge of the \"Customer Intelligence without complexity\" CTA (blog post + case study)"
+    },
+    "/assets/images/S3RKtEYSzUUuSahluNIMk9GLeA.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Intercom; /integrations hero floating icon: Intercom"
+    },
+    "/assets/images/UIHTqte4CPgqZDPDwDEG0s0Ho.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Attio"
+    },
+    "/assets/images/UfTrFPCijebpj5IFlfRkLKLacOI.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Linear; /integrations hero floating icon: Linear"
+    },
+    "/assets/images/XRbKvcPwbRsg9wVc91euYiluW0.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Monday"
+    },
+    "/assets/images/XmM63Wx2KWkOaft48yXXc18CyM.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Freshdesk"
+    },
+    "/assets/images/YSOCLc10Pm5giKy92FKDm3N98.png": {
+      "size": "2249x2250",
+      "use": "/about The Team: Village Global logo"
+    },
+    "/assets/images/aARJ5drAj0mHZPvWzaEjVqZjdLI.png": {
+      "size": "800x978",
+      "use": "/about The Team: Apple logo"
+    },
+    "/assets/images/f7HOhUOTSeAiz1xQpLphgAa14.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Looker"
+    },
+    "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png": {
+      "size": "5308x801",
+      "use": "Case-study hero: wide track strip at hero bottom (cover). 1180x178.1 @1440, 690x104.1 @810, 390x58.8 @390"
+    },
+    "/assets/images/gCGFzFGCt80Cbr9gMxJX3CEgM.png": {
+      "size": "192x192",
+      "use": "/integrations card icon: Slack; /integrations hero floating icon: Slack"
+    },
+    "/assets/images/iQ2JZYjvKKfyLTDXUl8vGNOQwU.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Tableau"
+    },
+    "/assets/images/kOUQplNj7eM7FqeyDzBTRRRT3k.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Snowflake"
+    },
+    "/assets/images/mCdezME6QB37hVMUxrnfofYkG4A.png": {
+      "size": "6937x2629",
+      "use": "/about hero: static track illustration under the hero (contain). 1440x545.7 @1440, 891x337.7 @810, 468x177.4 @390"
+    },
+    "/assets/images/o8F2OnXuoLKgK4qmkqMelKTSQGU.png": {
+      "size": "300x300",
+      "use": "/integrations card icon: Zendesk"
+    },
+    "/assets/images/oNGpHUP9g7iifCqk0zTjAlSh9c.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: AWS (Redshift)"
+    },
+    "/assets/images/qF3RCB3tZef2Qb5l9UUaDfG8w.jpeg": {
+      "size": "400x400",
+      "use": "/about The Team: Berkeley logo"
+    },
+    "/assets/images/rwFOtIZJ55yAeQ4cCOtj9ZatJI.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Databricks"
+    },
+    "/assets/images/tMQC2muSScoj9CE2n0ytLbe7GAs.jpg": {
+      "size": "3024x4032",
+      "use": "/about hero: right team photo (cover, r8) inside frame"
+    },
+    "/assets/images/ueC80kYZbLMiXoobfYJJhCmxRg.png": {
+      "size": "600x600",
+      "use": "/integrations card icon: Metabase"
+    },
+    "/assets/images/umhQGx0rXCUSSr8zH3WCQoqTiNY.png": {
+      "size": "560x750",
+      "use": "/about mission card: corner sticker (TR and BL), 154.9x194.4 @D/T, 111x139.3 @P"
+    }
+  },
+  "svg": {
+    "/assets/svg/blog-hero-arrow.svg": "Blog post hero art (viewBox 779x483): colored tracks ending in an up-right arrow. Rendered 972x602.7 @1440, 549x340.4 @810, 330x204.6 @390, fill. Was an inline data-URI <img>.",
+    "/assets/svg/integrations-hero-tracks.svg": "/integrations hero track frame (viewBox 1150x576). Rendered 865.2x433.3 inside an 840x180 clip @1440 (648.9x325 @810; scaled 0.75 @390).",
+    "/assets/svg/about-empathy.svg": "/about value icon 32x32 (viewBox 18x18, full-color glyph, no background tile; rendered 32x32, object-fit fill)",
+    "/assets/svg/about-beautiful-design.svg": "/about value icon",
+    "/assets/svg/about-accountability.svg": "/about value icon",
+    "/assets/svg/about-less-is-more.svg": "/about value icon",
+    "/assets/svg/about-question-everything.svg": "/about value icon",
+    "/assets/svg/about-relentless-purpose.svg": "/about value icon",
+    "/assets/svg/about-it-will-be-ugly.svg": "/about value icon",
+    "/assets/svg/about-no-finish-line.svg": "/about value icon",
+    "/assets/svg/about-role-icon-blue.svg": "/about Open roles card 1 icon (32x32, #678efd)",
+    "/assets/svg/about-role-icon-pink.svg": "/about Open roles card 2 icon (32x32, #f677fd)",
+    "/assets/svg/form-spinner-mask.svg": "Contact submit button Loading-state spinner mask (20x20); source framerusercontent images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg"
+  },
+  "rive": {
+    "/assets/riv/HlJWhQXKLiwPA8cob7OjHpIwjhU.riv": {
+      "artboard": "About",
+      "fit": "layout",
+      "alignment": "center",
+      "layoutScaleFactor": 1,
+      "use": "Desktop (>=1200) bg for /about hero, /about Our Values section, /contact hero, /404 hero"
+    },
+    "/assets/riv/CUIzkbzcTG52R1qzdAuoh60Fo.riv": {
+      "artboard": "About_Break Point",
+      "fit": "layout",
+      "alignment": "center",
+      "use": "Tablet (810-1199) replacement of the About.riv on /about hero, /contact, /404. Not rendered on phone."
+    },
+    "/assets/riv/y3w7BY0rkzhHAExCainCnWrcHsw.riv": {
+      "artboard": "Card",
+      "fit": "cover",
+      "alignment": "center",
+      "use": "/about mission section: tracks crossing behind the mission card (all breakpoints)"
+    },
+    "/assets/riv/DCOySC2BuXWymEhmnOZXHmu72XI.riv": {
+      "artboard": "Our Mission",
+      "fit": "contain",
+      "alignment": "center",
+      "use": "/about mission card: dotted strip at card top (1044x37)"
+    },
+    "/assets/riv/1asyi1d9j29xN9d8sE6Hlgg67Q.riv": {
+      "artboard": "Our Mission 2",
+      "fit": "contain",
+      "alignment": "center",
+      "use": "/about mission card: dotted strip at card bottom (1044x37)"
+    },
+    "/assets/riv/Uq3YeQEEX0UsPfhU8yFnHzkJZlU.riv": {
+      "artboard": "About",
+      "fit": "layout",
+      "alignment": "center",
+      "use": "Desktop bg of dark heroes: /integrations, /case-study/*, /legals/*"
+    },
+    "/assets/riv/8ubTz5jBPfH05evDGWznRfB74M.riv": {
+      "artboard": "About_Break Point",
+      "fit": "layout",
+      "alignment": "center",
+      "use": "Tablet bg of dark heroes (/integrations, /case-study/*, /legals/* on tablet)"
+    },
+    "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv": {
+      "artboard": "About",
+      "fit": "layout",
+      "alignment": "center",
+      "use": "Desktop bg: /blogs hero (violet), blog-post hero (stone) and blog-post FAQ panel"
+    },
+    "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv": {
+      "artboard": "About_Break Point",
+      "fit": "layout",
+      "alignment": "center",
+      "use": "Tablet replacement of Blog.riv"
+    },
+    "/assets/riv/Aw54OYkSRnZlmjRkUd6iNyKjco.riv": {
+      "artboard": "Demo 4",
+      "fit": "contain",
+      "alignment": "bottomRight",
+      "use": "Shared CTA card (RIGHT.riv) on about/blogs/integrations/blog post/case study"
+    },
+    "/assets/riv/nhu0tRmUpWwEoH2Ln6s62J1x1Y.riv": {
+      "artboard": "Demo 5",
+      "fit": "contain",
+      "alignment": "bottomLeft",
+      "use": "Shared CTA card (LEFT.riv); hidden on phone"
+    },
+    "/assets/riv/OInirLcETOKEtorAiFhBgAGxqU.riv": {
+      "artboard": "Demo 3",
+      "fit": "contain",
+      "alignment": "topRight",
+      "use": "Shared CTA card (TOP.riv)"
+    }
+  },
+  "integrations": [
+    {
+      "name": "Attio",
+      "description": "Connect & sync your Attio CRM account to see customer data in Wavelength",
+      "href": "https://attio.com",
+      "icon": "/assets/images/UIHTqte4CPgqZDPDwDEG0s0Ho.png"
+    },
+    {
+      "name": "AWS (Redshift)",
+      "description": "Sync all your customer data stored in AWS down to Wavelength",
+      "href": "https://aws.amazon.com/redshift/",
+      "icon": "/assets/images/oNGpHUP9g7iifCqk0zTjAlSh9c.png"
+    },
+    {
+      "name": "Confluence",
+      "description": "Link design documents, PRD’s, and more directly to customer interactions",
+      "href": "https://www.atlassian.com/software/confluence",
+      "icon": "/assets/images/EpfxAbG2B3wdRN6unPgp3fVvw0.png"
+    },
+    {
+      "name": "Databricks",
+      "description": "Connect & sync usage, customer, or other data stored in your data lake.",
+      "href": "https://www.databricks.com",
+      "icon": "/assets/images/rwFOtIZJ55yAeQ4cCOtj9ZatJI.png"
+    },
+    {
+      "name": "Email",
+      "description": "Never miss a beat on customer interaction and get rich insights on customer interactions directly in Wavelength",
+      "href": "https://mail.google.com/mail/",
+      "icon": "/assets/images/7B7ZrreucQrygOVcmetA7S0dc.png"
+    },
+    {
+      "name": "Freshdesk",
+      "description": "Enrich accounts in Wavelength with support interactions from Freshdesk",
+      "href": "https://www.freshworks.com/freshdesk/",
+      "icon": "/assets/images/XmM63Wx2KWkOaft48yXXc18CyM.png"
+    },
+    {
+      "name": "Google Drive",
+      "description": "Link decks (QBR’s), spreadsheets, docs, and more to your accounts of choice in Wavelength",
+      "href": "https://workspace.google.com/products/drive/",
+      "icon": "/assets/images/BAbgKlPGETJLTtNr8COGQHets0E.png"
+    },
+    {
+      "name": "Hubspot",
+      "description": "Two-Way Sync CRM data from hubspot to wavelength",
+      "href": "https://www.hubspot.com",
+      "icon": "/assets/images/8r7sztvIXadESA8pCpk8slX4XTc.png"
+    },
+    {
+      "name": "Intercom",
+      "description": "Get a better picture of customer sentiment by connecting Intercom support tickets",
+      "href": "https://www.intercom.com",
+      "icon": "/assets/images/S3RKtEYSzUUuSahluNIMk9GLeA.png"
+    },
+    {
+      "name": "Jira",
+      "description": "Create, see, and close the loop on feature requests from Jira in Wavelength",
+      "href": "https://www.atlassian.com/software/jira",
+      "icon": "/assets/images/DvjFZWt9lG0xPklQXqFQZt5Ks.png"
+    },
+    {
+      "name": "Linear",
+      "description": "Create, see, and close the loop on feature requests from Linear in Wavelength",
+      "href": "https://linear",
+      "icon": "/assets/images/UfTrFPCijebpj5IFlfRkLKLacOI.png"
+    },
+    {
+      "name": "Looker",
+      "description": "Operationalize Looker reports directly in Wavelength with two-way sync",
+      "href": "https://lookerstudio.google.com/u/0/",
+      "icon": "/assets/images/f7HOhUOTSeAiz1xQpLphgAa14.png"
+    },
+    {
+      "name": "Metabase",
+      "description": "Create a single source of truth with your usage data from Metabase in Wavelength",
+      "href": "https://www.metabase.com",
+      "icon": "/assets/images/ueC80kYZbLMiXoobfYJJhCmxRg.png"
+    },
+    {
+      "name": "Microsoft Teams",
+      "description": "See all customer interactions over Teams directly in Wavelength",
+      "href": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+      "icon": "/assets/images/HKr6is74RNqsjbjd2h4gOyYPU.png"
+    },
+    {
+      "name": "Monday",
+      "description": "From Monday Dashboards to the rest of the week’s goals, put them all in one system in Wavelength",
+      "href": "https://monday.com",
+      "icon": "/assets/images/XRbKvcPwbRsg9wVc91euYiluW0.png"
+    },
+    {
+      "name": "Notion",
+      "description": "Sync PRDs, customer notes, and other data directly from your docs to Wavelength",
+      "href": "https://www.notion.com/",
+      "icon": "/assets/images/GWd2FFmDQiiSnZqujh4CQRdnGA.png"
+    },
+    {
+      "name": "Salesforce",
+      "description": "Two-way sync to form a single source of truth with our Salesforce integration",
+      "href": "https://www.salesforce.com",
+      "icon": "/assets/images/CzSofVwEgTZxiejLbyBAGwUpyX8.png"
+    },
+    {
+      "name": "Slack",
+      "description": "Pipe slack communications into a true integrated system",
+      "href": "https://slack.com",
+      "icon": "/assets/images/gCGFzFGCt80Cbr9gMxJX3CEgM.png"
+    },
+    {
+      "name": "Snowflake",
+      "description": "Connect & sync usage, customer, or other data stored in your data lake",
+      "href": "https://www.snowflake.com/en/",
+      "icon": "/assets/images/kOUQplNj7eM7FqeyDzBTRRRT3k.png"
+    },
+    {
+      "name": "Tableau",
+      "description": "No more table look ups, find all of your BI data in Wavelength",
+      "href": "https://www.tableau.com",
+      "icon": "/assets/images/iQ2JZYjvKKfyLTDXUl8vGNOQwU.png"
+    },
+    {
+      "name": "Zendesk",
+      "description": "See every open ticket directly attached to an account in Wavelength",
+      "href": "https://www.zendesk.com",
+      "icon": "/assets/images/o8F2OnXuoLKgK4qmkqMelKTSQGU.png"
+    }
+  ],
+  "notAvailable": [
+    "No new fonts: subpages use only TWK Lausanne 400/700 (already local). Inter is declared by the form component but not rendered.",
+    "No videos on any subpage."
+  ]
+}

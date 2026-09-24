@@ -1,0 +1,68 @@
+{
+  "id": "content.blog-grid",
+  "purpose": "Grid of listed post cards (deliberately only the CMS-flagged subset)",
+  "measuredFrom": "src/pages/Blogs.jsx:11,105-116; src/data/blogs.json:2 (index-quirk note)",
+  "content": {
+    "properties": {
+      "posts": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "excerpt": {
+              "type": "string",
+              "maxWords": 20
+            },
+            "cover": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "blog-cover"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            },
+            "indexCardDate": {
+              "type": "string"
+            },
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "excerpt",
+            "cover",
+            "indexCardDate",
+            "href"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "posts"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "REAL, DELIBERATE quirk, not a bug: the live source (and this clone) only ever lists items with listedOnIndex=true -- currently 1 of 21 real posts. The other 20 exist as real, fully-built pages reachable only by direct URL/sitemap. A generated instance for template.blog-index must not 'fix' this by listing every post."
+  },
+  "motion": {
+    "pattern": "reveal-stagger",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "component.card-grid",
+  "measuredFrom": "src/pages/Blogs.jsx:105-111; src/pages/CaseStudy.jsx:83-92; src/pages/Integrations.jsx:277-281",
+  "composesOf": [
+    "component.hover-card-base"
+  ],
+  "props": {
+    "columns": {
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "motion": {
+    "pattern": "reveal-stagger",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

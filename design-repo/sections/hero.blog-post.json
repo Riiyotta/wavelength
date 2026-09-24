@@ -1,0 +1,56 @@
+{
+  "id": "hero.blog-post",
+  "purpose": "Fixed-height article hero with author/date byline",
+  "measuredFrom": "src/pages/BlogPost.jsx:16-42",
+  "content": {
+    "properties": {
+      "author": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "date": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string",
+        "maxWords": 14
+      },
+      "excerpt": {
+        "type": "string",
+        "maxWords": 24
+      },
+      "heroArt": {
+        "type": "object",
+        "properties": {
+          "assetRole": {
+            "const": "decorative-illustration"
+          },
+          "src": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "assetRole",
+          "src"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "author",
+      "date",
+      "title",
+      "excerpt",
+      "heroArt"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.blog-post"
+}

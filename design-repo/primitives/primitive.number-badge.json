@@ -1,0 +1,14 @@
+{
+  "id": "primitive.number-badge",
+  "measuredFrom": "src/components/ui.jsx:107-116",
+  "props": {
+    "value": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$"
+    }
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

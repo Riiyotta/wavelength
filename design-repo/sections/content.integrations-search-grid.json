@@ -1,0 +1,75 @@
+{
+  "id": "content.integrations-search-grid",
+  "purpose": "Live client-side search over the integration catalog",
+  "measuredFrom": "src/pages/Integrations.jsx:254-302",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "searchPlaceholder": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "description": {
+              "type": "string",
+              "maxWords": 20
+            },
+            "icon": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "partner-logo"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "name",
+            "description",
+            "icon"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "emptyStateMessage": {
+        "type": "string",
+        "maxWords": 6
+      }
+    },
+    "required": [
+      "heading",
+      "searchPlaceholder",
+      "items",
+      "emptyStateMessage"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "search is real client-side substring filtering on item.name only (src/pages/Integrations.jsx:256-258); description is not searched"
+  },
+  "motion": {
+    "pattern": "reveal-stagger-plus-hover",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

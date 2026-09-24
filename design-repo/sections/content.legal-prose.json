@@ -1,0 +1,50 @@
+{
+  "id": "content.legal-prose",
+  "purpose": "Long-form structured legal prose (headings/paragraphs/lists)",
+  "measuredFrom": "src/pages/Legal.jsx:65-95, src/data/legal.js",
+  "content": {
+    "properties": {
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "h4",
+                "h5",
+                "h6",
+                "p",
+                "ul"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "maxWords": 200
+            }
+          },
+          "required": [
+            "kind",
+            "text"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "blocks"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "source prose is a copyright-motivated generic placeholder (src/data/legal.js), matched to the real document's measured block/word structure -- not the live site's actual legal text"
+  },
+  "motion": {
+    "pattern": "appear-once",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.legal"
+}

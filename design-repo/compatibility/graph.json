@@ -1,0 +1,62 @@
+{
+  "rules": [
+    {
+      "id": "ONE_HERO_PER_PAGE",
+      "severity": "error",
+      "description": "Every PageSpec must contain exactly one node whose section id starts with 'hero.'.",
+      "exception": "None -- every one of the 9 real templates has exactly one hero.* node (verified against templates/templates.json's own node lists: hero.home, hero.about, hero.contact-form, hero.integrations, hero.blog-index, hero.blog-post, hero.case-study, hero.legal, hero.not-found). There is no hero-less template in this design-repo."
+    },
+    {
+      "id": "SHELL_MUST_BRACKET_PAGE",
+      "severity": "error",
+      "description": "shell.navbar must be the first non-announcement-bar node; shell.footer must be the second-to-last node; shell.cookie-banner must be the last node.",
+      "exception": "None"
+    },
+    {
+      "id": "JOIN_CTA_MUST_PRECEDE_FOOTER",
+      "severity": "error",
+      "description": "When cta.join-the-wave or cta.closing is present, it must be the node immediately before shell.footer.",
+      "exception": "None"
+    },
+    {
+      "id": "ARTICLE_BODY_REQUIRES_CI_CTA",
+      "severity": "error",
+      "description": "content.article-body must be immediately followed by cta.customer-intelligence.",
+      "appliesToTemplates": [
+        "template.blog-post",
+        "template.case-study"
+      ],
+      "exception": "None -- verified directly: src/pages/BlogPost.jsx:44-45 and src/pages/CaseStudy.jsx:79-80 both render <Article/> then <CiCta/> with nothing between."
+    },
+    {
+      "id": "HOME_ONLY_SECTIONS",
+      "severity": "error",
+      "description": "hero.home, proof.logo-strip, features.platform-grid, features.product-overview, proof.enterprise-scale, proof.testimonials, faq.integrations-promo, and cta.closing may only appear on template.home.",
+      "exception": "None"
+    },
+    {
+      "id": "ROUTE_RESTRICTED_SECTIONS",
+      "severity": "error",
+      "description": "hero.blog-post + faq.blog-post are restricted to template.blog-post; hero.case-study + content.related-case-studies are restricted to template.case-study; hero.legal + content.legal-prose are restricted to template.legal; hero.not-found is restricted to template.not-found.",
+      "exception": "None"
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY_HERO",
+      "severity": "warn",
+      "description": "Two hero.* nodes must never be adjacent (redundant with ONE_HERO_PER_PAGE today, kept as a defense-in-depth warn rule in case a future template legitimately needs two non-adjacent heroes).",
+      "exception": "None"
+    },
+    {
+      "id": "REDUCED_MOTION_FALLBACK_REQUIRED",
+      "severity": "error",
+      "description": "Every node with a non-'none' motion.pattern must declare motion.reducedMotionFallback from the closed enum (static-final-state | first-frame-static).",
+      "exception": "None"
+    },
+    {
+      "id": "NO_OUTBOUND_LINKS",
+      "severity": "error",
+      "description": "Every href-bearing field anywhere in a PageSpec (ctaHref, linkHref, footer column hrefs, etc.) must be same-site: it must start with '/' or '#'. This mirrors src/components/ui.jsx's localHref/isInternal, which structurally refuses to render any other href.",
+      "exception": "None -- this is a real, load-bearing product constraint (all outbound links were deliberately stripped this session), not a style preference."
+    }
+  ]
+}

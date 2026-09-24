@@ -1,0 +1,6 @@
+{
+  "measuredFrom": "tailwind.config.js:77-79",
+  "shadows": {
+    "cookie": "rgba(0,0,0,0.25) 0 2px 4px, inset 0 0 0 1px rgba(0,0,0,0.05)"
+  }
+}

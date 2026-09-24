@@ -1,0 +1,64 @@
+{
+  "measuredFrom": "src/components/sub/motion.js:1-40, src/components/ui.jsx:13-14, src/components/Hero.jsx:10-14",
+  "easings": {
+    "framer-tween": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "photo-ease": "cubic-bezier(0.22, 0.9, 0.32, 1)"
+  },
+  "springs": {
+    "spring-05": {
+      "type": "spring",
+      "duration": 0.5,
+      "bounce": 0
+    },
+    "featured-spring": {
+      "type": "spring",
+      "duration": 0.4,
+      "bounce": 0.2
+    },
+    "cookie-spring": {
+      "type": "spring",
+      "stiffness": 500,
+      "damping": 60,
+      "mass": 1
+    },
+    "slideshow-spring": {
+      "type": "spring",
+      "stiffness": 200,
+      "damping": 40,
+      "mass": 1
+    }
+  },
+  "tweens": {
+    "framer-tween-03": {
+      "type": "tween",
+      "duration": 0.3,
+      "ease": [
+        0.33,
+        1,
+        0.68,
+        1
+      ]
+    },
+    "reveal-tween-04": {
+      "type": "tween",
+      "duration": 0.4,
+      "ease": [
+        0.33,
+        1,
+        0.68,
+        1
+      ]
+    },
+    "loop-tween-3s": {
+      "type": "tween",
+      "duration": 3,
+      "ease": [
+        0.5,
+        0,
+        0.5,
+        1
+      ]
+    }
+  },
+  "reducedMotionPolicy": "Every motion-bearing node must declare reducedMotionFallback. For appear/reveal spring or tween animations the fallback is 'static-final-state' (render the animate/whileInView end state directly, no transition). For infinite loops (Rive canvases, MP4 LoopVideo, logo ticker/grid rotator, integration icon loop) the fallback is 'first-frame-static' (freeze on the first frame/poster, no autoplay)."
+}

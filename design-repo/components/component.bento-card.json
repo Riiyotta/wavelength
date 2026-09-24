@@ -1,0 +1,21 @@
+{
+  "id": "component.bento-card",
+  "measuredFrom": "src/components/ProductOverview.jsx:5-15,39-149",
+  "composesOf": [
+    "primitive.icon-tile",
+    "primitive.loop-video",
+    "primitive.rive-canvas"
+  ],
+  "props": {
+    "span": {
+      "enum": [
+        2,
+        3
+      ]
+    }
+  },
+  "motion": {
+    "pattern": "none (video/rive handle their own loop)",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

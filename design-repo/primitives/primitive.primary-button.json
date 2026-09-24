@@ -1,0 +1,25 @@
+{
+  "id": "primitive.primary-button",
+  "measuredFrom": "src/components/ui.jsx:53-77",
+  "props": {
+    "variant": {
+      "enum": [
+        "light",
+        "black",
+        "noicon"
+      ]
+    },
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "maxWords": 4
+    }
+  },
+  "constraint": "href must satisfy localHref: only same-site paths ('/route') or in-page anchors ('#id') render as a link; anything else is refused (src/components/ui.jsx:8-11,54-58). No outbound/external links are ever rendered by this primitive.",
+  "motion": {
+    "pattern": "hover-color-tween-03",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

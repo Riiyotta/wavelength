@@ -1,0 +1,62 @@
+{
+  "id": "content.open-roles",
+  "purpose": "Careers listing, in-page anchor target for #career",
+  "measuredFrom": "src/pages/About.jsx:278-341",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "roles": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "chips": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxWords": 3
+              },
+              "maxItems": 3
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "chips"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "roles"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "anchorId": "career"
+  },
+  "motion": {
+    "pattern": "reveal-stagger",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

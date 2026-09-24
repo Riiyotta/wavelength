@@ -1,0 +1,17 @@
+{
+  "id": "component.testimonial-card",
+  "measuredFrom": "src/components/Testimonials.jsx:63-99",
+  "composesOf": [
+    "primitive.rive-canvas"
+  ],
+  "props": {
+    "riveInteractive": {
+      "type": "boolean"
+    }
+  },
+  "note": "wraps a real named customer logo + quote + avatar -- see cta/proof.testimonials section contract's reuse-or-omit guidance",
+  "motion": {
+    "pattern": "hover-color-tween-03",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

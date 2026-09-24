@@ -1,0 +1,63 @@
+{
+  "repositoryId": "wavelength-clone-design-repo",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion is machine-checked: extraction/verify_all.py fails the run if it drifts from tokens/llm/component-allowlist.json's own allowlistVersion field. repositoryVersion and pageSpecVersion are documentation-only, hand-maintained markers -- nothing automatically enforces them; they exist for human changelog tracking only.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light"
+  ],
+  "sourceProject": {
+    "name": "wavelength-clone",
+    "description": "Pixel-fidelity React 18 + Vite 5 + Tailwind v3 clone of the original marketing site (an AI-native CRM product, formerly branded 'Assembly'; link omitted from this repo). Real, live company/product -- see tokens/llm/asset-roles.json and README.md for compliance/licensing guidance.",
+    "frameworkVersions": {
+      "react": "18.x",
+      "vite": "5.x",
+      "tailwindcss": "3.x",
+      "reactRouterDom": "6.x (createBrowserRouter-style <Routes>)"
+    }
+  },
+  "counts": {
+    "tokens": {
+      "foundation": 7,
+      "semantic": 1,
+      "component": 1,
+      "layout": 1,
+      "themes": 1
+    },
+    "primitives": 9,
+    "components": 7,
+    "sections": 32,
+    "templates": 9,
+    "routes": 47
+  },
+  "countsNote": "Recomputed from disk by extraction/verify_all.py on every run (globs tokens/**, primitives/*.json, components/*.json, sections/*.json, templates/templates.json's own templates[] and routeCount) -- not a hand-maintained number. A drift-injection test proves this check actually fails on a wrong count (see extraction/verify_all.py's own test harness note and the adversarial suite).",
+  "entryPoints": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "tokens": [
+      "tokens/00-foundation",
+      "tokens/10-semantic",
+      "tokens/20-component",
+      "tokens/30-layout",
+      "tokens/themes/light.json",
+      "tokens/llm/component-allowlist.json",
+      "tokens/llm/asset-roles.json"
+    ],
+    "primitives": "primitives/",
+    "components": "components/",
+    "sections": "sections/",
+    "templates": "templates/templates.json",
+    "compatibilityGraph": "compatibility/graph.json",
+    "schema": "schema/pagespec.schema.json",
+    "exampleInstance": "schema/example.pagespec.json",
+    "semanticValidator": "schema/semantic_validate.py",
+    "adversarialTests": "schema/tests/adversarial_test.py",
+    "measuredValues": "extraction/measured-values.json",
+    "verifyAll": "extraction/verify_all.py"
+  },
+  "entryPointsNote": "Every entryPoints value is a path INSIDE this design-repo/ folder -- none reference the sibling app (src/, CLONE_SPEC.md, PAGES_SPEC.md, recon/, etc.). Those sibling citations live in extraction/measured-values.json instead, which degrades gracefully (warns, does not fail) when that sibling source tree isn't present -- see its own _note field."
+}

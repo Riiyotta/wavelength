@@ -1,0 +1,38 @@
+{
+  "id": "shell.footer",
+  "purpose": "Closing same-site link inventory and legal attribution",
+  "measuredFrom": "src/components/Footer.jsx:1-80",
+  "content": {
+    "properties": {
+      "columns": {
+        "type": "array",
+        "maxItems": 2
+      },
+      "copyrightLine": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "socialLabels": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 2
+      }
+    },
+    "required": [
+      "columns",
+      "copyrightLine"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "mustBeLast": true,
+    "onePerPage": true,
+    "notePrecedesCookieBanner": true
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

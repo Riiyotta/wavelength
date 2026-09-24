@@ -1,0 +1,76 @@
+{
+  "id": "features.platform-grid",
+  "purpose": "Explain the 3 flagship AI capabilities with looping product video",
+  "measuredFrom": "src/components/PlatformFeatures.jsx:1-110",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 14
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 26
+      },
+      "features": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 40
+            },
+            "video": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "product-video"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "label",
+            "title",
+            "body",
+            "video"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "features"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "loop-rive-or-video",
+    "reducedMotionFallback": "first-frame-static"
+  },
+  "homeRouteOnly": true
+}

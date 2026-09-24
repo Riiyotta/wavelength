@@ -1,0 +1,17 @@
+{
+  "id": "component.faq-accordion-item",
+  "measuredFrom": "src/components/IntegrationsFaq.jsx:36-88",
+  "composesOf": [],
+  "props": {
+    "backgroundVariant": {
+      "enum": [
+        "bg-mist",
+        "bg-[#fbfaf9]"
+      ]
+    }
+  },
+  "motion": {
+    "pattern": "height-tween-03",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

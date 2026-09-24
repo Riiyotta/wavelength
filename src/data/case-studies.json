@@ -1,0 +1,3336 @@
+{
+  "_note": "Metadata for all 18 /case-study/<slug> CMS items, in sitemap (CMS collection) order. No author/date/category/reading time is rendered (null). Bodies are structure-only (see blogs.json note); all items share identical structure. `related` = the 3 slugs shown under \"Related Case Studies\" on that page; rule observed: collection order, exclude current item, skip the first 2 remaining, take 3. Case studies are NOT linked from nav, footer (footer \"Case Studies\" points to \"./\" = home) or any other page; they are reachable only via the sitemap and each other's Related cards. Source: original marketing site (link omitted from this repo). Paragraph `chars` = the source paragraph length in characters (structure only, used to size placeholder copy so line counts match). Blocks with `size: \"l\"` keep Body L (16/22.4) at every breakpoint: on the source the Challenge section's spacer and second paragraph carry an inline size, so they do not drop to 14/19.6 on tablet/phone.",
+  "relatedRule": "items.filter(i => i.slug !== current).slice(2, 5)",
+  "items": [
+    {
+      "slug": "using-ai-to-reduce-manual-tasks-across-teams",
+      "url": "/case-study/using-ai-to-reduce-manual-tasks-across-teams",
+      "title": "Using AI to Reduce Manual Tasks Across Teams",
+      "excerpt": "How cross-functional teams adopted AI to reduce manual work and speed up daily execution.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "how-you-improved-candidate-experience-end-to-end"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Using AI to Reduce Manual Tasks Across Teams - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-automation-helped-you-scale-without-hiring-more-staff",
+      "url": "/case-study/how-automation-helped-you-scale-without-hiring-more-staff",
+      "title": "How Automation Helped You Scale Without Hiring More Staff",
+      "excerpt": "How a growing SaaS company scaled operations using automation instead of expanding headcount.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "how-you-improved-candidate-experience-end-to-end"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How Automation Helped You Scale Without Hiring More Staff - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "replacing-repetitive-processes-with-smart-ai-systems",
+      "url": "/case-study/replacing-repetitive-processes-with-smart-ai-systems",
+      "title": "Replacing Repetitive Processes With Smart AI Systems",
+      "excerpt": "How legacy workflows were replaced with intelligent systems that run autonomously.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "how-you-improved-candidate-experience-end-to-end"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Replacing Repetitive Processes With Smart AI Systems - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+      "url": "/case-study/how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+      "title": "How You Cut Time-to-Hire by 40% With Better Hiring Flows",
+      "excerpt": "How a recruiting team redesigned its hiring flow to reduce time-to-hire by 40%.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "how-you-improved-candidate-experience-end-to-end"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How You Cut Time-to-Hire by 40% With Better Hiring Flows - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "scaling-your-hiring-pipeline-without-sacrificing-quality",
+      "url": "/case-study/scaling-your-hiring-pipeline-without-sacrificing-quality",
+      "title": "Scaling Your Hiring Pipeline Without Sacrificing Quality",
+      "excerpt": "How a fast-growing team scaled hiring while maintaining candidate quality.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "how-you-improved-candidate-experience-end-to-end"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Scaling Your Hiring Pipeline Without Sacrificing Quality - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-improved-candidate-experience-end-to-end",
+      "url": "/case-study/how-you-improved-candidate-experience-end-to-end",
+      "title": "How You Improved Candidate Experience End to End",
+      "excerpt": "How small process changes improved candidate experience across every touchpoint.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How You Improved Candidate Experience End to End - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "turning-raw-data-into-clear-business-decisions",
+      "url": "/case-study/turning-raw-data-into-clear-business-decisions",
+      "title": "Turning Raw Data Into Clear Business Decisions",
+      "excerpt": "How fragmented data was transformed into insights leaders could act on.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Turning Raw Data Into Clear Business Decisions - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-used-insights-to-improve-team-performance",
+      "url": "/case-study/how-you-used-insights-to-improve-team-performance",
+      "title": "How You Used Insights to Improve Team Performance",
+      "excerpt": "How performance data helped teams identify gaps and improve output.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How You Used Insights to Improve Team Performance - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "identifying-growth-opportunities-through-behavioral-data",
+      "url": "/case-study/identifying-growth-opportunities-through-behavioral-data",
+      "title": "Identifying Growth Opportunities Through Behavioral Data",
+      "excerpt": "How behavioral insights revealed new growth opportunities across the product.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Identifying Growth Opportunities Through Behavioral Data - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "from-numbers-to-strategy-how-data-changed-your-direction",
+      "url": "/case-study/from-numbers-to-strategy-how-data-changed-your-direction",
+      "title": "From Numbers to Strategy. How Data Changed Your Direction",
+      "excerpt": "How leadership used data to rethink strategy and set a new direction.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "From Numbers to Strategy. How Data Changed Your Direction - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "what-changed-after-rolling-out-ai-automation-company-wide",
+      "url": "/case-study/what-changed-after-rolling-out-ai-automation-company-wide",
+      "title": "What Changed After Rolling Out AI Automation Company-Wide",
+      "excerpt": "A breakdown of the operational changes after company-wide AI adoption.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "What Changed After Rolling Out AI Automation Company-Wide - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "hiring-system-updates-that-improved-results-instantly",
+      "url": "/case-study/hiring-system-updates-that-improved-results-instantly",
+      "title": "Hiring System Updates That Improved Results Instantly",
+      "excerpt": "What changed after updating the hiring system and why results improved immediately.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Hiring System Updates That Improved Results Instantly - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "key-product-changes-that-unlocked-better-data-visibility",
+      "url": "/case-study/key-product-changes-that-unlocked-better-data-visibility",
+      "title": "Key Product Changes That Unlocked Better Data Visibility",
+      "excerpt": "How targeted product updates unlocked clearer data visibility for teams.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Key Product Changes That Unlocked Better Data Visibility - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "a-step-by-step-guide-to-automating-your-core-operations",
+      "url": "/case-study/a-step-by-step-guide-to-automating-your-core-operations",
+      "title": "A Step-by-Step Guide to Automating Your Core Operations",
+      "excerpt": "A practical walkthrough of automating core workflows from start to finish.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "A Step-by-Step Guide to Automating Your Core Operations - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-to-build-a-data-driven-hiring-strategy",
+      "url": "/case-study/how-to-build-a-data-driven-hiring-strategy",
+      "title": "How to Build a Data-Driven Hiring Strategy",
+      "excerpt": "A clear guide to building a hiring strategy backed by real data.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How to Build a Data-Driven Hiring Strategy - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "a-practical-guide-to-using-insights-for-smarter-decisions",
+      "url": "/case-study/a-practical-guide-to-using-insights-for-smarter-decisions",
+      "title": "A Practical Guide to Using Insights for Smarter Decisions",
+      "excerpt": "How to turn insights into decisions your team can act on immediately.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "A Practical Guide to Using Insights for Smarter Decisions - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-scaled-smarter-using-automation-data-and-better-hiring",
+      "url": "/case-study/how-you-scaled-smarter-using-automation-data-and-better-hiring",
+      "title": "How You Scaled Smarter Using Automation, Data, and Better Hiring",
+      "excerpt": "How automation, insights, and better hiring came together to drive smarter growth.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "How You Scaled Smarter Using Automation, Data, and Better Hiring - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "bringing-ai-talent-and-insights-together-for-sustainable-growth",
+      "url": "/case-study/bringing-ai-talent-and-insights-together-for-sustainable-growth",
+      "title": "Bringing AI, Talent, and Insights Together for Sustainable Growth",
+      "excerpt": "How aligning AI, hiring, and data created a foundation for long-term growth.",
+      "date": null,
+      "author": null,
+      "category": null,
+      "readingTime": null,
+      "coverImage": "/assets/images/9ztf1OxOfNWaDQZHlFzRewVYbw.png",
+      "coverImageNote": "1848x1120 \"Logoipsum\" placeholder card; hero shows it at 400x242.4 (radius 8, cover) and related cards at 320x193.9. Same image for every case study.",
+      "heroTrackImage": "/assets/images/g5yjnDc0WoLZMg4PIjD9w2ZdC8.png",
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "The Impact",
+          "anchor": "the-impact"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 68,
+              "chars": 475
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Challenge"
+            },
+            {
+              "type": "p",
+              "words": 60,
+              "chars": 425
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)",
+              "size": "l"
+            },
+            {
+              "type": "p",
+              "words": 27,
+              "chars": 215,
+              "size": "l"
+            }
+          ]
+        },
+        {
+          "kind": "imagePlaceholder",
+          "note": "empty grey box on source: bg #f4f2f0, radius 8, height 460, full content width (no <img> in CMS)"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 35,
+              "chars": 284
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 50,
+              "chars": 326
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-impact",
+          "tocLabel": "The Impact",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Impact"
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 61
+            },
+            {
+              "type": "p",
+              "words": 8,
+              "chars": 63
+            },
+            {
+              "type": "p",
+              "words": 7,
+              "chars": 48
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 145
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "p",
+              "words": 32,
+              "chars": 232
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 201
+            }
+          ]
+        }
+      ],
+      "related": [
+        "replacing-repetitive-processes-with-smart-ai-systems",
+        "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "scaling-your-hiring-pipeline-without-sacrificing-quality"
+      ],
+      "wordCount": 346,
+      "seo": {
+        "title": "Bringing AI, Talent, and Insights Together for Sustainable Growth - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    }
+  ]
+}

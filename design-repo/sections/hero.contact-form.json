@@ -1,0 +1,76 @@
+{
+  "id": "hero.contact-form",
+  "purpose": "Capture inbound contact requests (no real backend)",
+  "measuredFrom": "src/pages/Contact.jsx:1-142",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 25
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "text",
+                "email",
+                "textarea"
+              ]
+            },
+            "placeholder": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "required": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "name",
+            "type",
+            "placeholder",
+            "required"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "submitLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "formBehavior": {
+        "type": "string",
+        "const": "local-simulation-no-network"
+      }
+    },
+    "required": [
+      "heading",
+      "body",
+      "fields",
+      "submitLabel",
+      "formBehavior"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "formBehavior is locked to local-simulation-no-network: src/pages/Contact.jsx:28-30 resolves a local setTimeout, never a network request -- a generated PageSpec must not imply a real POST endpoint"
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "measuredFrom": "tailwind.config.js:31-39",
+  "radii": {
+    "avatar": "2px",
+    "media": "5px",
+    "card": "8px",
+    "panel": "12px",
+    "cookie": "14px",
+    "panel-lg": "20px",
+    "badge": "29.53px"
+  }
+}

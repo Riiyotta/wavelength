@@ -1,0 +1,79 @@
+{
+  "_note": "Citation ledger for every design decision in this design-repo. `siblingCitations` point at the wavelength-clone app source (one directory up from design-repo/) and are informational only -- extraction/verify_all.py's citation-range check WARNS (does not fail) when that sibling tree isn't present, e.g. after this folder is zipped/copied standalone. `internalCitations` point at files inside this design-repo and ARE hard-checked.",
+  "siblingSourceRootRelativeToThisFile": "..",
+  "siblingCitations": {
+    "tokens": [
+      "tailwind.config.js:1-89"
+    ],
+    "routesAndSitemap": [
+      "src/App.jsx:1-45",
+      "PAGES_SPEC.md:20-33",
+      "src/data/blogs.json:2",
+      "src/data/case-studies.json:2-3"
+    ],
+    "homeSections": [
+      "src/pages/Home.jsx:1-24",
+      "src/components/Hero.jsx:1-72",
+      "src/components/LogoStrip.jsx:1-153",
+      "src/components/PlatformFeatures.jsx:1-110",
+      "src/components/ProductOverview.jsx:1-148",
+      "src/components/Enterprise.jsx:1-90",
+      "src/components/Testimonials.jsx:1-231",
+      "src/components/IntegrationsFaq.jsx:1-147",
+      "src/components/ClosingCta.jsx:1-52"
+    ],
+    "aboutSections": [
+      "src/pages/About.jsx:1-355"
+    ],
+    "contactSection": [
+      "src/pages/Contact.jsx:1-142"
+    ],
+    "integrationsSections": [
+      "src/pages/Integrations.jsx:1-314"
+    ],
+    "blogSections": [
+      "src/pages/Blogs.jsx:1-116",
+      "src/pages/BlogPost.jsx:1-50",
+      "src/components/sub/Article.jsx:1-188"
+    ],
+    "caseStudySections": [
+      "src/pages/CaseStudy.jsx:1-97"
+    ],
+    "legalSections": [
+      "src/pages/Legal.jsx:1-128",
+      "src/data/legal.js"
+    ],
+    "notFoundSection": [
+      "src/pages/NotFound.jsx:1-31"
+    ],
+    "sharedPrimitivesAndChrome": [
+      "src/components/ui.jsx:1-191",
+      "src/components/Navbar.jsx:1-125",
+      "src/components/Footer.jsx:1-80",
+      "src/components/CookieBanner.jsx:1-70",
+      "src/components/sub/shared.jsx:1-90",
+      "src/components/sub/motion.js:1-40",
+      "src/components/sub/Ctas.jsx:1-133"
+    ],
+    "assetInventory": [
+      "ASSET_MANIFEST.json",
+      "PAGES_ASSET_MANIFEST.json"
+    ],
+    "qaAudit": [
+      "QA_REPORT.md"
+    ]
+  },
+  "internalCitations": {
+    "everySectionContract": "sections/*.json each carry their own measuredFrom field",
+    "everyPrimitive": "primitives/*.json each carry their own measuredFrom field",
+    "everyComponent": "components/*.json each carry their own measuredFrom field",
+    "everyTemplate": "templates/templates.json's templates[].measuredFrom"
+  },
+  "spotChecks": {
+    "blogPostVsBlogsJson": "Verified src/pages/BlogPost.jsx:11-14 reads blogs.items.find(b => b.slug === slug) and renders <Article toc={post.toc} body={post.body}/> -- matches src/data/blogs.json's per-item toc/body shape exactly for the 2 items sampled (assembly-is-now-wavelength, and a second item read during this build).",
+    "caseStudyRelatedRule": "Verified verbatim in src/pages/CaseStudy.jsx:13-16: `export function relatedFor(slug) { return ITEMS.filter((i) => i.slug !== slug).slice(2, 5) }` -- matches case-studies.json's own documented relatedRule field exactly.",
+    "blogIndexQuirk": "Verified src/pages/Blogs.jsx:11: `const LISTED = blogs.items.filter((b) => b.listedOnIndex)` and confirmed via `node -e` that exactly 1 of 21 items has listedOnIndex:true.",
+    "noOutboundLinks": "Verified src/components/ui.jsx:8,11,23: localHref only passes through strings matching /^[/#]/, isInternal requires a leading '/'; CALENDLY is hard-mapped to the local '/contact' route.",
+    "routeCount": "Recomputed programmatically (not hand-counted): 8 static + 21 blog + 18 case-study = 47, NOT 48 as a prior informal estimate assumed -- see templates/templates.json's own routeCountNote for the exact breakdown."
+  }
+}

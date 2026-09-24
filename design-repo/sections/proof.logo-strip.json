@@ -1,0 +1,46 @@
+{
+  "id": "proof.logo-strip",
+  "purpose": "Establish social proof via customer-logo repetition",
+  "measuredFrom": "src/components/LogoStrip.jsx:1-153",
+  "content": {
+    "properties": {
+      "caption": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "assetRole": {
+              "const": "customer-logo"
+            },
+            "src": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "assetRole",
+            "src"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "caption",
+      "logos"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "grid-rotator-or-ticker-loop",
+    "reducedMotionFallback": "first-frame-static"
+  },
+  "homeRouteOnly": true
+}

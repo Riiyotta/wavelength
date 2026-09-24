@@ -1,0 +1,53 @@
+{
+  "id": "shell.navbar",
+  "purpose": "Primary same-site navigation, always reachable",
+  "measuredFrom": "src/components/Navbar.jsx:31-125",
+  "content": {
+    "properties": {
+      "links": {
+        "type": "array",
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "label",
+            "href"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "ctaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "ctaHref": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "links",
+      "ctaLabel",
+      "ctaHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "mustFollowNav": false,
+    "mustBeFirst": true,
+    "onePerPage": true,
+    "noteOnLinks": "every href must be same-site per the no-outbound-links constraint (localHref/isInternal in src/components/ui.jsx:8-11,23)"
+  },
+  "motion": {
+    "pattern": "hamburger-height-tween",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

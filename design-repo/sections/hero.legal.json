@@ -1,0 +1,30 @@
+{
+  "id": "hero.legal",
+  "purpose": "Minimal dark hero for legal documents",
+  "measuredFrom": "src/pages/Legal.jsx:102-116",
+  "content": {
+    "properties": {
+      "updated": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "title": {
+        "type": "string",
+        "maxWords": 4
+      }
+    },
+    "required": [
+      "updated",
+      "title"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.legal"
+}

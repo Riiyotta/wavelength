@@ -1,0 +1,2758 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://design-repo.local/schema/pagespec.schema.json",
+  "title": "Wavelength clone PageSpec",
+  "type": "object",
+  "properties": {
+    "route": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "template": {
+      "enum": [
+        "template.home",
+        "template.about",
+        "template.contact",
+        "template.integrations",
+        "template.blog-index",
+        "template.blog-post",
+        "template.case-study",
+        "template.legal",
+        "template.not-found"
+      ]
+    },
+    "routeParam": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.article-body"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "toc": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "anchor": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "anchor"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "body": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "anchor": {
+                          "type": "string"
+                        },
+                        "heading": {
+                          "type": "string",
+                          "maxWords": 10
+                        },
+                        "paragraphs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "maxWords": 90
+                          }
+                        }
+                      },
+                      "required": [
+                        "anchor",
+                        "heading",
+                        "paragraphs"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "toc",
+                  "body"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.blog-grid"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "posts": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "maxWords": 12
+                        },
+                        "excerpt": {
+                          "type": "string",
+                          "maxWords": 20
+                        },
+                        "cover": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "blog-cover"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "indexCardDate": {
+                          "type": "string"
+                        },
+                        "href": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "excerpt",
+                        "cover",
+                        "indexCardDate",
+                        "href"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "posts"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.integrations-search-grid"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 2
+                  },
+                  "searchPlaceholder": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "maxWords": 3
+                        },
+                        "description": {
+                          "type": "string",
+                          "maxWords": 20
+                        },
+                        "icon": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "partner-logo"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "description",
+                        "icon"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "emptyStateMessage": {
+                    "type": "string",
+                    "maxWords": 6
+                  }
+                },
+                "required": [
+                  "heading",
+                  "searchPlaceholder",
+                  "items",
+                  "emptyStateMessage"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.legal-prose"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "blocks": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "h4",
+                            "h5",
+                            "h6",
+                            "p",
+                            "ul"
+                          ]
+                        },
+                        "text": {
+                          "type": "string",
+                          "maxWords": 200
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "text"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "blocks"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.mission"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "paragraphs": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 4,
+                    "items": {
+                      "type": "string",
+                      "maxWords": 60
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "paragraphs"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.open-roles"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "roles": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "maxWords": 6
+                        },
+                        "body": {
+                          "type": "string",
+                          "maxWords": 12
+                        },
+                        "chips": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "maxItems": 3
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "body",
+                        "chips"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "roles"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.related-case-studies"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "related": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "maxWords": 12
+                        },
+                        "excerpt": {
+                          "type": "string",
+                          "maxWords": 20
+                        },
+                        "cover": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "case-study-cover"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "href": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "excerpt",
+                        "cover",
+                        "href"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "related"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.team-grid"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 30
+                  },
+                  "logos": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "maxWords": 3
+                        },
+                        "logo": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "partner-logo"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "logo"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "body",
+                  "logos"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "content.values-grid"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "values": {
+                    "type": "array",
+                    "minItems": 8,
+                    "maxItems": 8,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "icon": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "decorative-icon"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "title": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "body": {
+                          "type": "string",
+                          "maxWords": 16
+                        }
+                      },
+                      "required": [
+                        "icon",
+                        "title",
+                        "body"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "values"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "cta.closing"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "primaryCtaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "primaryCtaHref": {
+                    "type": "string"
+                  },
+                  "secondaryCtaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "secondaryCtaHref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "heading",
+                  "primaryCtaLabel",
+                  "primaryCtaHref",
+                  "secondaryCtaLabel",
+                  "secondaryCtaHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "cta.customer-intelligence"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 6
+                  },
+                  "primaryCtaLabel": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "primaryCtaHref": {
+                    "type": "string"
+                  },
+                  "secondaryCtaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "secondaryCtaHref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "heading",
+                  "primaryCtaLabel",
+                  "primaryCtaHref",
+                  "secondaryCtaLabel",
+                  "secondaryCtaHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "cta.join-the-wave"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 22
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "const": "Schedule Demo"
+                  },
+                  "ctaHref": {
+                    "type": "string",
+                    "const": "/contact"
+                  }
+                },
+                "required": [
+                  "title",
+                  "body",
+                  "ctaLabel",
+                  "ctaHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "faq.blog-post"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 26
+                  },
+                  "faqItems": {
+                    "type": "array",
+                    "minItems": 5,
+                    "maxItems": 5,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "q": {
+                          "type": "string",
+                          "maxWords": 14
+                        },
+                        "a": {
+                          "type": "string",
+                          "maxWords": 45
+                        }
+                      },
+                      "required": [
+                        "q",
+                        "a"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "faqItems"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "faq.integrations-promo"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "bannerHeading": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "bannerBody": {
+                    "type": "string",
+                    "maxWords": 24
+                  },
+                  "bannerCtaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "bannerCtaHref": {
+                    "type": "string"
+                  },
+                  "faqHeading": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "faqSubheading": {
+                    "type": "string",
+                    "maxWords": 26
+                  },
+                  "faqItems": {
+                    "type": "array",
+                    "minItems": 5,
+                    "maxItems": 5,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "q": {
+                          "type": "string",
+                          "maxWords": 14
+                        },
+                        "a": {
+                          "type": "string",
+                          "maxWords": 45
+                        }
+                      },
+                      "required": [
+                        "q",
+                        "a"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "bannerHeading",
+                  "bannerBody",
+                  "bannerCtaLabel",
+                  "bannerCtaHref",
+                  "faqHeading",
+                  "faqSubheading",
+                  "faqItems"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "features.platform-grid"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 14
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 26
+                  },
+                  "features": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "title": {
+                          "type": "string",
+                          "maxWords": 12
+                        },
+                        "body": {
+                          "type": "string",
+                          "maxWords": 40
+                        },
+                        "video": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "product-video"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "title",
+                        "body",
+                        "video"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "features"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "features.product-overview"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 12
+                  },
+                  "cards": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "maxWords": 6
+                        },
+                        "body": {
+                          "type": "string",
+                          "maxWords": 20
+                        },
+                        "video": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "product-video"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "body",
+                        "video"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "cards"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.about"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 45
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "ctaHref": {
+                    "type": "string",
+                    "const": "/about#career"
+                  },
+                  "photos": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "assetRole": {
+                          "const": "team-photo"
+                        },
+                        "src": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "assetRole",
+                        "src"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "body",
+                  "ctaLabel",
+                  "ctaHref",
+                  "photos"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.blog-index"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 2
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 10
+                  },
+                  "featuredPost": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "maxWords": 12
+                      },
+                      "excerpt": {
+                        "type": "string",
+                        "maxWords": 20
+                      },
+                      "cover": {
+                        "type": "object",
+                        "properties": {
+                          "assetRole": {
+                            "const": "blog-cover"
+                          },
+                          "src": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "assetRole",
+                          "src"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "href": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "title",
+                      "excerpt",
+                      "cover",
+                      "href"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "featuredPost"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.blog-post"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "author": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string",
+                    "maxWords": 14
+                  },
+                  "excerpt": {
+                    "type": "string",
+                    "maxWords": 24
+                  },
+                  "heroArt": {
+                    "type": "object",
+                    "properties": {
+                      "assetRole": {
+                        "const": "decorative-illustration"
+                      },
+                      "src": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "assetRole",
+                      "src"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "author",
+                  "date",
+                  "title",
+                  "excerpt",
+                  "heroArt"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.case-study"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "maxWords": 12
+                  },
+                  "excerpt": {
+                    "type": "string",
+                    "maxWords": 24
+                  },
+                  "cover": {
+                    "type": "object",
+                    "properties": {
+                      "assetRole": {
+                        "const": "case-study-cover"
+                      },
+                      "src": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "assetRole",
+                      "src"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "title",
+                  "excerpt",
+                  "cover"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.contact-form"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 25
+                  },
+                  "fields": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "text",
+                            "email",
+                            "textarea"
+                          ]
+                        },
+                        "placeholder": {
+                          "type": "string",
+                          "maxWords": 3
+                        },
+                        "required": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "type",
+                        "placeholder",
+                        "required"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "submitLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "formBehavior": {
+                    "type": "string",
+                    "const": "local-simulation-no-network"
+                  }
+                },
+                "required": [
+                  "heading",
+                  "body",
+                  "fields",
+                  "submitLabel",
+                  "formBehavior"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.home"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 30
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "ctaHref": {
+                    "type": "string"
+                  },
+                  "screenshot": {
+                    "type": "object",
+                    "properties": {
+                      "assetRole": {
+                        "const": "screenshot"
+                      },
+                      "src": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "assetRole",
+                      "src"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "ctaLabel",
+                  "ctaHref",
+                  "screenshot"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.integrations"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 6
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 30
+                  },
+                  "clusterIcons": {
+                    "type": "array",
+                    "minItems": 6,
+                    "maxItems": 6,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "assetRole": {
+                          "const": "partner-logo"
+                        },
+                        "src": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "assetRole",
+                        "src"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "body",
+                  "clusterIcons"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.legal"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "updated": {
+                    "type": "string",
+                    "maxWords": 6
+                  },
+                  "title": {
+                    "type": "string",
+                    "maxWords": 4
+                  }
+                },
+                "required": [
+                  "updated",
+                  "title"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "hero.not-found"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 12
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "ctaHref": {
+                    "type": "string",
+                    "const": "/"
+                  }
+                },
+                "required": [
+                  "heading",
+                  "body",
+                  "ctaLabel",
+                  "ctaHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "proof.enterprise-scale"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 6
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 26
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "ctaHref": {
+                    "type": "string"
+                  },
+                  "items": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "n": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "body": {
+                          "type": "string",
+                          "maxWords": 20
+                        }
+                      },
+                      "required": [
+                        "n",
+                        "title",
+                        "body"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "ctaLabel",
+                  "ctaHref",
+                  "items"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "proof.logo-strip"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "caption": {
+                    "type": "string",
+                    "maxWords": 10
+                  },
+                  "logos": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "assetRole": {
+                          "const": "customer-logo"
+                        },
+                        "src": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "assetRole",
+                        "src"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "caption",
+                  "logos"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "proof.testimonials"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 6
+                  },
+                  "subheading": {
+                    "type": "string",
+                    "maxWords": 10
+                  },
+                  "cards": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "logo": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "customer-logo"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "quote": {
+                          "type": "string",
+                          "maxWords": 60
+                        },
+                        "name": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "role": {
+                          "type": "string",
+                          "maxWords": 8
+                        },
+                        "avatar": {
+                          "type": "object",
+                          "properties": {
+                            "assetRole": {
+                              "const": "customer-photo"
+                            },
+                            "src": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "assetRole",
+                            "src"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "logo",
+                        "quote",
+                        "name",
+                        "role",
+                        "avatar"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "heading",
+                  "subheading",
+                  "cards"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "shell.announcement-bar"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "linkLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "linkHref": {
+                    "type": "string",
+                    "assetRole": null
+                  }
+                },
+                "required": [
+                  "text",
+                  "linkLabel",
+                  "linkHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "shell.cookie-banner"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 40
+                  },
+                  "acceptLabel": {
+                    "type": "string",
+                    "maxWords": 2
+                  },
+                  "rejectLabel": {
+                    "type": "string",
+                    "maxWords": 2
+                  }
+                },
+                "required": [
+                  "title",
+                  "body",
+                  "acceptLabel",
+                  "rejectLabel"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "shell.footer"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "columns": {
+                    "type": "array",
+                    "maxItems": 2
+                  },
+                  "copyrightLine": {
+                    "type": "string",
+                    "maxWords": 12
+                  },
+                  "socialLabels": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "maxItems": 2
+                  }
+                },
+                "required": [
+                  "columns",
+                  "copyrightLine"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "section": {
+                "const": "shell.navbar"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "repeatable": {
+                "type": "boolean"
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "links": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 3
+                        },
+                        "href": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "ctaLabel": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "ctaHref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "links",
+                  "ctaLabel",
+                  "ctaHref"
+                ],
+                "additionalProperties": false
+              },
+              "motion": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string"
+                  },
+                  "reducedMotionFallback": {
+                    "enum": [
+                      "static-final-state",
+                      "first-frame-static"
+                    ]
+                  }
+                },
+                "required": [
+                  "reducedMotionFallback"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "section",
+              "required",
+              "repeatable",
+              "content",
+              "motion"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "route",
+    "template",
+    "nodes"
+  ],
+  "additionalProperties": false
+}

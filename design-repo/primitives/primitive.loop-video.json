@@ -1,0 +1,17 @@
+{
+  "id": "primitive.loop-video",
+  "measuredFrom": "src/components/ui.jsx:143-191",
+  "props": {
+    "src": {
+      "$ref": "asset-role#/product-video"
+    },
+    "poster": {
+      "type": "string"
+    }
+  },
+  "note": "on-viewport autoplay/pause per src/components/ui.jsx:149-191; must always declare a poster frame for reducedMotionFallback",
+  "motion": {
+    "pattern": "viewport-gated-autoplay-loop",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

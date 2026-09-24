@@ -1,0 +1,18 @@
+{
+  "id": "primitive.text-link",
+  "measuredFrom": "src/components/ui.jsx:80-96",
+  "props": {
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "maxWords": 4
+    }
+  },
+  "constraint": "same same-site-only rule as primitive.primary-button (localHref, src/components/ui.jsx:80-89)",
+  "motion": {
+    "pattern": "hover-opacity",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

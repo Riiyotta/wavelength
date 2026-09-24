@@ -1,0 +1,3890 @@
+{
+  "_note": "Metadata for all 21 /blogs/<slug> CMS items, in sitemap (CMS collection) order. Bodies are NOT copied: `body` records structure only (heading level + heading text, paragraph word counts, empty-paragraph spacers, images). On the source every post shares the identical body structure and the same image; only title/excerpt vary. No category, tag or reading time is rendered anywhere (null). Only assembly-is-now-wavelength is listed on /blogs (index shows it as the featured card AND the single grid card); other posts are reachable only by URL/sitemap. The index card shows date \"February 6, 2026\" while every post page shows \"February 6, 2025\" (source inconsistency; keep both). Source: original marketing site (link omitted from this repo). Paragraph `chars` = the source paragraph length in characters (structure only, used to size placeholder copy so line counts match).",
+  "items": [
+    {
+      "slug": "assembly-is-now-wavelength",
+      "url": "/blogs/assembly-is-now-wavelength",
+      "title": "Assembly is now Wavelength!",
+      "excerpt": "The future of customer work is finally here",
+      "date": "February 6, 2025",
+      "indexCardDate": "February 6, 2026",
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": true,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Assembly is now Wavelength! - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-automated-internal-workflows-and-saved-20-hours-weekly",
+      "url": "/blogs/how-you-automated-internal-workflows-and-saved-20-hours-weekly",
+      "title": "How You Automated Internal Workflows and Saved 20+ Hours Weekly",
+      "excerpt": "How a SaaS operations team used AI automation to eliminate repetitive tasks and free up 20+ hours every week.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How You Automated Internal Workflows and Saved 20+ Hours Weekly - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "using-ai-to-reduce-manual-tasks-across-teams",
+      "url": "/blogs/using-ai-to-reduce-manual-tasks-across-teams",
+      "title": "Using AI to Reduce Manual Tasks Across Teams",
+      "excerpt": "How cross-functional teams adopted AI to reduce manual work and speed up daily execution.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Using AI to Reduce Manual Tasks Across Teams - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-automation-helped-you-scale-without-hiring-more-staff",
+      "url": "/blogs/how-automation-helped-you-scale-without-hiring-more-staff",
+      "title": "How Automation Helped You Scale Without Hiring More Staff",
+      "excerpt": "How a growing SaaS company scaled operations using automation instead of expanding headcount.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How Automation Helped You Scale Without Hiring More Staff - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "replacing-repetitive-processes-with-smart-ai-systems",
+      "url": "/blogs/replacing-repetitive-processes-with-smart-ai-systems",
+      "title": "Replacing Repetitive Processes With Smart AI Systems",
+      "excerpt": "How legacy workflows were replaced with intelligent systems that run autonomously.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Replacing Repetitive Processes With Smart AI Systems - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+      "url": "/blogs/how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+      "title": "How You Cut Time-to-Hire by 40% With Better Hiring Flows",
+      "excerpt": "How a recruiting team redesigned its hiring flow to reduce time-to-hire by 40%.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How You Cut Time-to-Hire by 40% With Better Hiring Flows - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "scaling-your-hiring-pipeline-without-sacrificing-quality",
+      "url": "/blogs/scaling-your-hiring-pipeline-without-sacrificing-quality",
+      "title": "Scaling Your Hiring Pipeline Without Sacrificing Quality",
+      "excerpt": "How a fast-growing team scaled hiring while maintaining candidate quality.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Scaling Your Hiring Pipeline Without Sacrificing Quality - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-improved-candidate-experience-end-to-end",
+      "url": "/blogs/how-you-improved-candidate-experience-end-to-end",
+      "title": "How You Improved Candidate Experience End to End",
+      "excerpt": "How small process changes improved candidate experience across every touchpoint.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How You Improved Candidate Experience End to End - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "hiring-faster-by-fixing-bottlenecks-in-your-recruitment-process",
+      "url": "/blogs/hiring-faster-by-fixing-bottlenecks-in-your-recruitment-process",
+      "title": "Hiring Faster by Fixing Bottlenecks in Your Recruitment Process",
+      "excerpt": "How identifying and fixing hiring bottlenecks unlocked faster recruitment cycles.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Hiring Faster by Fixing Bottlenecks in Your Recruitment Process - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "turning-raw-data-into-clear-business-decisions",
+      "url": "/blogs/turning-raw-data-into-clear-business-decisions",
+      "title": "Turning Raw Data Into Clear Business Decisions",
+      "excerpt": "How fragmented data was transformed into insights leaders could act on.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Turning Raw Data Into Clear Business Decisions - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-used-insights-to-improve-team-performance",
+      "url": "/blogs/how-you-used-insights-to-improve-team-performance",
+      "title": "How You Used Insights to Improve Team Performance",
+      "excerpt": "How performance data helped teams identify gaps and improve output.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How You Used Insights to Improve Team Performance - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "identifying-growth-opportunities-through-behavioral-data",
+      "url": "/blogs/identifying-growth-opportunities-through-behavioral-data",
+      "title": "Identifying Growth Opportunities Through Behavioral Data",
+      "excerpt": "How behavioral insights revealed new growth opportunities across the product.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Identifying Growth Opportunities Through Behavioral Data - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "from-numbers-to-strategy-how-data-changed-your-direction",
+      "url": "/blogs/from-numbers-to-strategy-how-data-changed-your-direction",
+      "title": "From Numbers to Strategy. How Data Changed Your Direction",
+      "excerpt": "How leadership used data to rethink strategy and set a new direction.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "From Numbers to Strategy. How Data Changed Your Direction - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "what-changed-after-rolling-out-ai-automation-company-wide",
+      "url": "/blogs/what-changed-after-rolling-out-ai-automation-company-wide",
+      "title": "What Changed After Rolling Out AI Automation Company-Wide",
+      "excerpt": "A breakdown of the operational changes after company-wide AI adoption.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "What Changed After Rolling Out AI Automation Company-Wide - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "hiring-system-updates-that-improved-results-instantly",
+      "url": "/blogs/hiring-system-updates-that-improved-results-instantly",
+      "title": "Hiring System Updates That Improved Results Instantly",
+      "excerpt": "What changed after updating the hiring system and why results improved immediately.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Hiring System Updates That Improved Results Instantly - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "key-product-changes-that-unlocked-better-data-visibility",
+      "url": "/blogs/key-product-changes-that-unlocked-better-data-visibility",
+      "title": "Key Product Changes That Unlocked Better Data Visibility",
+      "excerpt": "How targeted product updates unlocked clearer data visibility for teams.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Key Product Changes That Unlocked Better Data Visibility - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "a-step-by-step-guide-to-automating-your-core-operations",
+      "url": "/blogs/a-step-by-step-guide-to-automating-your-core-operations",
+      "title": "A Step-by-Step Guide to Automating Your Core Operations",
+      "excerpt": "A practical walkthrough of automating core workflows from start to finish.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "A Step-by-Step Guide to Automating Your Core Operations - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-to-build-a-data-driven-hiring-strategy",
+      "url": "/blogs/how-to-build-a-data-driven-hiring-strategy",
+      "title": "How to Build a Data-Driven Hiring Strategy",
+      "excerpt": "A clear guide to building a hiring strategy backed by real data.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How to Build a Data-Driven Hiring Strategy - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "a-practical-guide-to-using-insights-for-smarter-decisions",
+      "url": "/blogs/a-practical-guide-to-using-insights-for-smarter-decisions",
+      "title": "A Practical Guide to Using Insights for Smarter Decisions",
+      "excerpt": "How to turn insights into decisions your team can act on immediately.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "A Practical Guide to Using Insights for Smarter Decisions - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "how-you-scaled-smarter-using-automation-data-and-better-hiring",
+      "url": "/blogs/how-you-scaled-smarter-using-automation-data-and-better-hiring",
+      "title": "How You Scaled Smarter Using Automation, Data, and Better Hiring",
+      "excerpt": "How automation, insights, and better hiring came together to drive smarter growth.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "How You Scaled Smarter Using Automation, Data, and Better Hiring - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    },
+    {
+      "slug": "bringing-ai-talent-and-insights-together-for-sustainable-growth",
+      "url": "/blogs/bringing-ai-talent-and-insights-together-for-sustainable-growth",
+      "title": "Bringing AI, Talent, and Insights Together for Sustainable Growth",
+      "excerpt": "How aligning AI, hiring, and data created a foundation for long-term growth.",
+      "date": "February 6, 2025",
+      "indexCardDate": null,
+      "author": "Pranav Mallampalli",
+      "category": null,
+      "readingTime": null,
+      "listedOnIndex": false,
+      "coverImage": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+      "coverImageNote": "Same CMS image is used for the featured index card (420x280 cover, radius 8) and as the in-body image between The Challenge and The Approach. Every post uses this same image.",
+      "heroArt": {
+        "svg": "/assets/svg/blog-hero-arrow.svg",
+        "rive": {
+          "desktop": "/assets/riv/HSuPIw4chuDb29eAOVt30CnWew.riv",
+          "tabletPhone": "/assets/riv/DnAJJnDxUqf6TDdmrNTHXZ5JA.riv"
+        }
+      },
+      "toc": [
+        {
+          "label": "Overview",
+          "anchor": "overview"
+        },
+        {
+          "label": "The Challenge",
+          "anchor": "the-challenge"
+        },
+        {
+          "label": "The Approach",
+          "anchor": "the-approach"
+        },
+        {
+          "label": "Why It Matters",
+          "anchor": "why-it-matters"
+        }
+      ],
+      "body": [
+        {
+          "kind": "section",
+          "anchor": "overview",
+          "tocLabel": "Overview",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Overview"
+            },
+            {
+              "type": "p",
+              "words": 34,
+              "chars": 190
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 79
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "the-challenge",
+          "tocLabel": "The Challenge",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Customer relationships used to feel simple"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 97
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 21,
+              "chars": 140
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 24,
+              "chars": 173
+            }
+          ]
+        },
+        {
+          "kind": "image",
+          "src": "/assets/images/AcwsZwnlfPgOR358Zn4ZX8nmY.png",
+          "radius": 8,
+          "aspectNote": "object-fit cover; 735.9x551.9 @1440, 458x343.5 @810, 350x262.5 @390"
+        },
+        {
+          "kind": "section",
+          "anchor": "the-approach",
+          "tocLabel": "The Approach",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "The Approach"
+            },
+            {
+              "type": "p",
+              "words": 29,
+              "chars": 174
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 31,
+              "chars": 243
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 17,
+              "chars": 117
+            }
+          ]
+        },
+        {
+          "kind": "section",
+          "anchor": "why-it-matters",
+          "tocLabel": "Why It Matters",
+          "blocks": [
+            {
+              "type": "h6",
+              "text": "Why we built this"
+            },
+            {
+              "type": "p",
+              "words": 28,
+              "chars": 155
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 146
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 20,
+              "chars": 142
+            },
+            {
+              "type": "spacer",
+              "note": "empty <p> (one line, 22.4px D / 19.6px T,P)"
+            },
+            {
+              "type": "p",
+              "words": 15,
+              "chars": 80
+            }
+          ]
+        }
+      ],
+      "wordCount": 271,
+      "seo": {
+        "title": "Bringing AI, Talent, and Insights Together for Sustainable Growth - Wavelength",
+        "description": "The First AI-Native CRM purpose built for post-sales teams to track your customers’ journey from the moment they onboard till the day they expand. ",
+        "ogImage": "/assets/images/9RB3aTvGgokip3AxDFx82RqPxMM.png"
+      }
+    }
+  ]
+}

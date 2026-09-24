@@ -1,0 +1,72 @@
+{
+  "id": "content.article-body",
+  "purpose": "Sticky-TOC long-form article body, shared by blog-post and case-study",
+  "measuredFrom": "src/components/sub/Article.jsx:87-153",
+  "content": {
+    "properties": {
+      "toc": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "anchor": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "label",
+            "anchor"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "body": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "anchor": {
+              "type": "string"
+            },
+            "heading": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "paragraphs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxWords": 90
+              }
+            }
+          },
+          "required": [
+            "anchor",
+            "heading",
+            "paragraphs"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "toc",
+      "body"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "shared verbatim contract for template.blog-post and template.case-study -- structure (heading levels + paragraph word budgets) is real, measured per-post prose is the project's own already-generic placeholder copy per src/data/blogs.json:2 / case-studies.json:2"
+  },
+  "motion": {
+    "pattern": "sticky-scroll-spy",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

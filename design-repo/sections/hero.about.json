@@ -1,0 +1,61 @@
+{
+  "id": "hero.about",
+  "purpose": "State the company mission with team photography",
+  "measuredFrom": "src/pages/About.jsx:44-81",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 45
+      },
+      "ctaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "ctaHref": {
+        "type": "string",
+        "const": "/about#career"
+      },
+      "photos": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "properties": {
+            "assetRole": {
+              "const": "team-photo"
+            },
+            "src": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "assetRole",
+            "src"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "body",
+      "ctaLabel",
+      "ctaHref",
+      "photos"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

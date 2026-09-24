@@ -1,0 +1,28 @@
+{
+  "measuredFrom": "derived from tokens/00-foundation/color.json + observed usage in src/components/*.jsx (e.g. text-ink, bg-mist, bg-ink used as page/section backgrounds throughout)",
+  "text": {
+    "primary": "{color.ink}",
+    "inverse": "{color.white}",
+    "muted": "rgba(38,37,33,0.6)",
+    "faqAnswer": "{color.faq-answer}"
+  },
+  "surface": {
+    "page": "{color.white}",
+    "brand": "{color.ink}",
+    "subtle": "{color.mist}",
+    "card": "{color.stone}",
+    "paper": "{color.paper}"
+  },
+  "border": {
+    "default": "{color.hairline}",
+    "focus": "{color.ink}"
+  },
+  "accent": {
+    "a": "{color.violet}",
+    "b": "{color.pink}",
+    "c": "{color.yellow}",
+    "d": "{color.orange}",
+    "e": "{color.mint}",
+    "f": "{color.link-blue}"
+  }
+}

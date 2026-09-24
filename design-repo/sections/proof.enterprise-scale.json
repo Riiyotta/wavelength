@@ -1,0 +1,67 @@
+{
+  "id": "proof.enterprise-scale",
+  "purpose": "Reassure enterprise buyers with security/scale claims",
+  "measuredFrom": "src/components/Enterprise.jsx:1-90",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 26
+      },
+      "ctaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "ctaHref": {
+        "type": "string"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "n": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 20
+            }
+          },
+          "required": [
+            "n",
+            "title",
+            "body"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "ctaLabel",
+      "ctaHref",
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "loop-rive-or-video",
+    "reducedMotionFallback": "first-frame-static"
+  },
+  "homeRouteOnly": true
+}

@@ -1,0 +1,71 @@
+{
+  "id": "content.related-case-studies",
+  "purpose": "Fixed-rule related-content cross-links (the only inbound links to case studies)",
+  "measuredFrom": "src/pages/CaseStudy.jsx:13-16,82-92",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "related": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "excerpt": {
+              "type": "string",
+              "maxWords": 20
+            },
+            "cover": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "case-study-cover"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            },
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "excerpt",
+            "cover",
+            "href"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "related"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "related[] must be exactly the 3 items real relatedFor(slug) selects: ITEMS.filter(i => i.slug !== slug).slice(2, 5) (src/pages/CaseStudy.jsx:14-16) -- collection order, excluding current, skipping the first 2 remaining, taking 3. Do not re-derive a different selection rule."
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.case-study"
+}

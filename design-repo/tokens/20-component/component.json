@@ -1,0 +1,43 @@
+{
+  "measuredFrom": "src/components/ui.jsx:38-51 (PrimaryButton variants), src/pages/Contact.jsx:15-22 (submit button states)",
+  "button.primary": {
+    "light": {
+      "rest": {
+        "bg": "#fdfcfb",
+        "text": "#262521"
+      },
+      "hover": {
+        "bg": "#262521",
+        "text": "#ffffff"
+      }
+    },
+    "black": {
+      "rest": {
+        "bg": "#262521",
+        "text": "#ffffff"
+      },
+      "hover": {
+        "bg": "#fdfcfb",
+        "text": "#262521"
+      }
+    },
+    "noicon": {
+      "rest": {
+        "bg": "rgba(255,255,255,0.1)",
+        "text": "#ffffff"
+      },
+      "hover": {
+        "bg": "rgba(255,255,255,0.22)",
+        "text": "#ffffff"
+      }
+    }
+  },
+  "button.formSubmit": {
+    "idle": "#262521",
+    "hover": "rgba(51,51,51,0.85)",
+    "pressed": "rgb(51,51,51)",
+    "loading": "#262521",
+    "success": "#262521",
+    "error": "rgba(255,34,68,0.15)"
+  }
+}

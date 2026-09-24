@@ -1,0 +1,19 @@
+{
+  "id": "component.hover-card-base",
+  "measuredFrom": ["src/pages/Blogs.jsx:30-53", "src/pages/Blogs.jsx:55-83", "src/pages/CaseStudy.jsx:23-41"],
+  "composesOf": [
+    "primitive.text-link"
+  ],
+  "props": {
+    "backgroundRest": {
+      "type": "string"
+    },
+    "backgroundHover": {
+      "type": "string"
+    }
+  },
+  "motion": {
+    "pattern": "hover-color-tween-03-or-spring-04",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

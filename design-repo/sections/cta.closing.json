@@ -1,0 +1,44 @@
+{
+  "id": "cta.closing",
+  "purpose": "Final dark conversion band before the footer, home only",
+  "measuredFrom": "src/components/ClosingCta.jsx:1-52",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "primaryCtaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "primaryCtaHref": {
+        "type": "string"
+      },
+      "secondaryCtaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "secondaryCtaHref": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "heading",
+      "primaryCtaLabel",
+      "primaryCtaHref",
+      "secondaryCtaLabel",
+      "secondaryCtaHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "pattern": "loop-rive-or-video",
+    "reducedMotionFallback": "first-frame-static"
+  },
+  "homeRouteOnly": true
+}

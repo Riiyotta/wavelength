@@ -1,0 +1,10 @@
+{
+  "id": "primitive.wordmark",
+  "measuredFrom": "src/components/ui.jsx:31-33",
+  "props": {},
+  "note": "renders the real Wavelength product mark (public/assets/svg/wavelength-logo.svg) as a CSS mask -- must-reuse-exact-or-omit, never a fabricated variation",
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "component.toc-nav",
+  "measuredFrom": "src/components/sub/Article.jsx:28-96",
+  "composesOf": [],
+  "props": {
+    "items": {
+      "type": "array"
+    }
+  },
+  "note": "scroll-spy active state (src/components/sub/Article.jsx:28-55); sticky at top-[120px], desktop/tablet only",
+  "motion": {
+    "pattern": "active-indicator-tween-05",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

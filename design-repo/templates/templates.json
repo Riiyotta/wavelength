@@ -1,0 +1,483 @@
+{
+  "templates": [
+    {
+      "id": "template.home",
+      "routes": [
+        "/"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.home",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.logo-strip",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.platform-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.product-overview",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.enterprise-scale",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.integrations-promo",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.closing",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/Home.jsx:1-24"
+    },
+    {
+      "id": "template.about",
+      "routes": [
+        "/about"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.about",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.mission",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.values-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.team-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.open-roles",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.join-the-wave",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/About.jsx:344-355"
+    },
+    {
+      "id": "template.contact",
+      "routes": [
+        "/contact"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.contact-form",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/Contact.jsx:83-142",
+      "note": "no cta.join-the-wave -- Contact.jsx renders only the hero/form section"
+    },
+    {
+      "id": "template.integrations",
+      "routes": [
+        "/integrations"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.integrations",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.integrations-search-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.join-the-wave",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/Integrations.jsx:305-313"
+    },
+    {
+      "id": "template.blog-index",
+      "routes": [
+        "/blogs"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.blog-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.blog-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.join-the-wave",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/Blogs.jsx:86-116"
+    },
+    {
+      "id": "template.blog-post",
+      "routes": [
+        "/blogs/assembly-is-now-wavelength",
+        "/blogs/how-you-automated-internal-workflows-and-saved-20-hours-weekly",
+        "/blogs/using-ai-to-reduce-manual-tasks-across-teams",
+        "/blogs/how-automation-helped-you-scale-without-hiring-more-staff",
+        "/blogs/replacing-repetitive-processes-with-smart-ai-systems",
+        "/blogs/how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "/blogs/scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "/blogs/how-you-improved-candidate-experience-end-to-end",
+        "/blogs/hiring-faster-by-fixing-bottlenecks-in-your-recruitment-process",
+        "/blogs/turning-raw-data-into-clear-business-decisions",
+        "/blogs/how-you-used-insights-to-improve-team-performance",
+        "/blogs/identifying-growth-opportunities-through-behavioral-data",
+        "/blogs/from-numbers-to-strategy-how-data-changed-your-direction",
+        "/blogs/what-changed-after-rolling-out-ai-automation-company-wide",
+        "/blogs/hiring-system-updates-that-improved-results-instantly",
+        "/blogs/key-product-changes-that-unlocked-better-data-visibility",
+        "/blogs/a-step-by-step-guide-to-automating-your-core-operations",
+        "/blogs/how-to-build-a-data-driven-hiring-strategy",
+        "/blogs/a-practical-guide-to-using-insights-for-smarter-decisions",
+        "/blogs/how-you-scaled-smarter-using-automation-data-and-better-hiring",
+        "/blogs/bringing-ai-talent-and-insights-together-for-sustainable-growth"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.blog-post",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.article-body",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.customer-intelligence",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.blog-post",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.join-the-wave",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/BlogPost.jsx:11-50",
+      "routeParam": "slug",
+      "routeParamSource": "src/data/blogs.json items[].slug"
+    },
+    {
+      "id": "template.case-study",
+      "routes": [
+        "/case-study/using-ai-to-reduce-manual-tasks-across-teams",
+        "/case-study/how-automation-helped-you-scale-without-hiring-more-staff",
+        "/case-study/replacing-repetitive-processes-with-smart-ai-systems",
+        "/case-study/how-you-cut-time-to-hire-by-40-with-better-hiring-flows",
+        "/case-study/scaling-your-hiring-pipeline-without-sacrificing-quality",
+        "/case-study/how-you-improved-candidate-experience-end-to-end",
+        "/case-study/turning-raw-data-into-clear-business-decisions",
+        "/case-study/how-you-used-insights-to-improve-team-performance",
+        "/case-study/identifying-growth-opportunities-through-behavioral-data",
+        "/case-study/from-numbers-to-strategy-how-data-changed-your-direction",
+        "/case-study/what-changed-after-rolling-out-ai-automation-company-wide",
+        "/case-study/hiring-system-updates-that-improved-results-instantly",
+        "/case-study/key-product-changes-that-unlocked-better-data-visibility",
+        "/case-study/a-step-by-step-guide-to-automating-your-core-operations",
+        "/case-study/how-to-build-a-data-driven-hiring-strategy",
+        "/case-study/a-practical-guide-to-using-insights-for-smarter-decisions",
+        "/case-study/how-you-scaled-smarter-using-automation-data-and-better-hiring",
+        "/case-study/bringing-ai-talent-and-insights-together-for-sustainable-growth"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.case-study",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.article-body",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.customer-intelligence",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.related-case-studies",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "cta.join-the-wave",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/CaseStudy.jsx:44-97",
+      "routeParam": "slug",
+      "routeParamSource": "src/data/case-studies.json items[].slug",
+      "note": "case studies are reachable only via direct URL/sitemap or another case study's Related cards -- never linked from nav or footer (footer's 'Case Studies' link points to '/' per src/components/Footer.jsx:5)"
+    },
+    {
+      "id": "template.legal",
+      "routes": [
+        "/legals/terms-conditions",
+        "/legals/privacy-policy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.legal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.legal-prose",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/Legal.jsx:98-128",
+      "note": "no cta.join-the-wave -- Legal.jsx renders only hero + body"
+    },
+    {
+      "id": "template.not-found",
+      "routes": [
+        "/404"
+      ],
+      "nodes": [
+        {
+          "section": "shell.announcement-bar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.not-found",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.cookie-banner",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "measuredFrom": "src/pages/NotFound.jsx:1-31; src/App.jsx:37-38",
+      "note": "src/App.jsx's catch-all route (path=\"*\") also renders this template for any unmatched URL, returning real HTTP 200 (client-side SPA router, not a server 404) -- the catch-all itself is not counted as a separate sitemap route."
+    }
+  ],
+  "routeCount": 47,
+  "routeCountNote": "47 real routes (not 48): 8 static routes (/, /about, /contact, /integrations, /blogs, /legals/terms-conditions, /legals/privacy-policy, /404) + 21 blog posts + 18 case studies. src/App.jsx's catch-all '*' route renders the same 404 component as the literal /404 path but is not a distinct sitemap URL, so it is not counted separately."
+}

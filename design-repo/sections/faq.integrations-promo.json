@@ -1,0 +1,73 @@
+{
+  "id": "faq.integrations-promo",
+  "purpose": "Combined integrations-CTA banner + product FAQ accordion",
+  "measuredFrom": "src/components/IntegrationsFaq.jsx:1-147",
+  "content": {
+    "properties": {
+      "bannerHeading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "bannerBody": {
+        "type": "string",
+        "maxWords": 24
+      },
+      "bannerCtaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "bannerCtaHref": {
+        "type": "string"
+      },
+      "faqHeading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "faqSubheading": {
+        "type": "string",
+        "maxWords": 26
+      },
+      "faqItems": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "properties": {
+            "q": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "a": {
+              "type": "string",
+              "maxWords": 45
+            }
+          },
+          "required": [
+            "q",
+            "a"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "bannerHeading",
+      "bannerBody",
+      "bannerCtaLabel",
+      "bannerCtaHref",
+      "faqHeading",
+      "faqSubheading",
+      "faqItems"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "accordion-height-tween",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "homeRouteOnly": true
+}

@@ -1,0 +1,375 @@
+{
+  "meta": {
+    "source": "wavelength-clone (React+Vite clone of the original marketing site; link omitted from this repo), documented from the actual src/ codebase",
+    "status": "measured-from-repo",
+    "totalRoutes": 48,
+    "totalTemplates": 9
+  },
+  "categories": {
+    "SHELL": "Persistent chrome rendered around every route by App.jsx \u2014 announcement bar, nav, footer, cookie banner.",
+    "HERO": "The above-the-fold intro block of a page: headline, supporting copy, primary CTA and/or hero art.",
+    "PROOF": "Social proof: customer/investor/company logos, testimonials, team affiliations.",
+    "FEATURE": "Product/platform capability blocks \u2014 feature grids, product overview, enterprise pitch.",
+    "CONTENT": "Long-form or listing content specific to a content type \u2014 article body, post grid, integration list, legal text.",
+    "FAQ": "Question/answer accordion blocks.",
+    "CTA": "Standalone conversion sections whose only job is to drive a click (demo, careers, contact form)."
+  },
+  "sections": {
+    "shell.announcement-bar": {
+      "category": "SHELL",
+      "description": "Thin dismissible banner above the navbar (AnnouncementBar in Navbar.jsx).",
+      "scope": "Rendered once in App.jsx above the navbar on every route."
+    },
+    "shell.navbar": {
+      "category": "SHELL",
+      "description": "Sticky top navigation: logo, nav links, mobile menu, CTA button.",
+      "scope": "Rendered once in App.jsx on every route (remounted per-route via `key={pathname}` to reset the mobile menu)."
+    },
+    "shell.footer": {
+      "category": "SHELL",
+      "description": "Site footer: link columns, legal links, social links.",
+      "scope": "Rendered once in App.jsx below <main> on every route."
+    },
+    "shell.cookie-banner": {
+      "category": "SHELL",
+      "description": "Bottom cookie-consent banner, dismissible and persisted client-side.",
+      "scope": "Rendered once in App.jsx on every route."
+    },
+    "shell.page-lines": {
+      "category": "SHELL",
+      "description": "Decorative vertical guide lines overlaid on certain hero sections (PageLines in components/sub/shared.jsx).",
+      "scope": "Listed as a template-level section only where App.jsx renders the fixed (global) variant — integrations, blog-index, blog-post, case-study, and not-found. On about and contact the same component is instead embedded locally, absolutely positioned inside the hero section markup itself (hero.about / hero.contact), so it isn't a separate top-level slot there; home and legal render neither variant."
+    },
+    "hero.home": {
+      "category": "HERO",
+      "description": "Home page hero: headline, subcopy, primary CTA, and animated Rive hero art (Hero.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "hero.about": {
+      "category": "HERO",
+      "description": "About page hero: 'Building for the revenue teams of tomorrow' headline, rotated photo pair, Explore Careers CTA (AboutHero in About.jsx).",
+      "scope": "Only the about template (/about)."
+    },
+    "hero.contact": {
+      "category": "HERO",
+      "description": "Contact page hero: 'Contact Us' headline + intro copy, directly above the contact form.",
+      "scope": "Only the contact template (/contact)."
+    },
+    "hero.integrations": {
+      "category": "HERO",
+      "description": "Integrations page hero: headline + animated horizontal-scrolling row of integration icon tiles (IntegrationsHero in Integrations.jsx).",
+      "scope": "Only the integrations template (/integrations)."
+    },
+    "hero.blogs-index": {
+      "category": "HERO",
+      "description": "Blog index hero: 'Blog' headline + subcopy + one featured post card (the single item flagged listedOnIndex).",
+      "scope": "Only the blog-index template (/blogs)."
+    },
+    "hero.blog-post": {
+      "category": "HERO",
+      "description": "Blog post hero: fixed-height banner with author/date byline, title, excerpt, and post hero art (post.heroArt.svg).",
+      "scope": "Only the blog-post template (/blogs/:slug), one per post."
+    },
+    "hero.case-study": {
+      "category": "HERO",
+      "description": "Case study hero (dark bg-ink): title, excerpt, cover image, track art image.",
+      "scope": "Only the case-study template (/case-study/:slug), one per case study."
+    },
+    "hero.legal": {
+      "category": "HERO",
+      "description": "Legal page hero (dark bg-ink): 'updated' date, document title.",
+      "scope": "Only the legal templates (/legals/terms-conditions, /legals/privacy-policy)."
+    },
+    "proof.logo-strip": {
+      "category": "PROOF",
+      "description": "Row of customer/investor logos directly under the home hero (LogoStrip.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "proof.testimonials": {
+      "category": "PROOF",
+      "description": "Customer testimonial cards (Testimonials.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "proof.our-mission": {
+      "category": "PROOF",
+      "description": "'Our mission' narrative card with Rive-animated background tracks and corner stickers (Mission in About.jsx).",
+      "scope": "Only the about template (/about)."
+    },
+    "proof.our-values": {
+      "category": "PROOF",
+      "description": "8-item 'Our Values' icon+title+body grid over a Rive-animated background (Values in About.jsx).",
+      "scope": "Only the about template (/about)."
+    },
+    "proof.the-team": {
+      "category": "PROOF",
+      "description": "'The Team' grid of past-employer/investor logos (Team in About.jsx).",
+      "scope": "Only the about template (/about)."
+    },
+    "feature.platform-features": {
+      "category": "FEATURE",
+      "description": "Grid of platform capability tiles (PlatformFeatures.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "feature.product-overview": {
+      "category": "FEATURE",
+      "description": "Product walkthrough / overview section (ProductOverview.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "feature.enterprise": {
+      "category": "FEATURE",
+      "description": "Enterprise-tier pitch section (Enterprise.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "content.integrations-faq": {
+      "category": "FAQ",
+      "description": "Home page integrations-flavored FAQ accordion (IntegrationsFaq.jsx).",
+      "scope": "Only the home template (/)."
+    },
+    "content.open-roles": {
+      "category": "CONTENT",
+      "description": "2-item open-roles list with title/body/location chips and a Learn More affordance (OpenRoles in About.jsx).",
+      "scope": "Only the about template (/about), section id=\"career\"."
+    },
+    "content.contact-form": {
+      "category": "CONTENT",
+      "description": "Contact form (Name/Email/Subject/Message fields, honeypot field, submit button with idle/loading/success/error states).",
+      "scope": "Only the contact template (/contact)."
+    },
+    "content.integrations-list": {
+      "category": "CONTENT",
+      "description": "Searchable grid of integration cards, filtered client-side by name substring, with an empty-state illustration when no match (IntegrationsList in Integrations.jsx).",
+      "scope": "Only the integrations template (/integrations)."
+    },
+    "content.blog-grid": {
+      "category": "CONTENT",
+      "description": "Grid of post cards for every entry in blogs.json (PostCard, includes the featured item again).",
+      "scope": "Only the blog-index template (/blogs)."
+    },
+    "content.article-body": {
+      "category": "CONTENT",
+      "description": "Shared long-form article renderer: table-of-contents sidebar with active-anchor tracking + rendered body blocks (Article in components/sub/Article.jsx).",
+      "scope": "Both the blog-post and case-study templates."
+    },
+    "content.blog-faq": {
+      "category": "FAQ",
+      "description": "FAQ accordion appended after every blog post body (BlogFaq in components/sub/Article.jsx).",
+      "scope": "Only the blog-post template (/blogs/:slug)."
+    },
+    "content.related-case-studies": {
+      "category": "CONTENT",
+      "description": "3-card 'Related Case Studies' grid, selected via ITEMS.filter(i => i.slug !== slug).slice(2, 5).",
+      "scope": "Only the case-study template (/case-study/:slug)."
+    },
+    "content.legal-body": {
+      "category": "CONTENT",
+      "description": "Rendered legal document body (headings/paragraphs/lists) from src/data/legal.js's structure-only blocks.",
+      "scope": "Only the legal templates."
+    },
+    "content.not-found": {
+      "category": "CONTENT",
+      "description": "404 'page not found' message, full-viewport-height centered.",
+      "scope": "Only the not-found template (/404, and any unmatched route, and as a fallback render inside BlogPost/CaseStudy when a slug doesn't resolve)."
+    },
+    "cta.ci-cta": {
+      "category": "CTA",
+      "description": "Mid-article conversion banner (CiCta in components/sub/Ctas.jsx), shown once per article-bearing page.",
+      "scope": "Both the blog-post and case-study templates, directly after the article body."
+    },
+    "cta.join": {
+      "category": "CTA",
+      "description": "Shared closing 'Join'/demo CTA band (JoinCta in components/sub/Ctas.jsx) with per-route copy/padding presets from JOIN_COPY/JOIN_PAD.",
+      "scope": "Appears as the final section on about, blog-index, blog-post, case-study, and integrations templates (not on home, contact, legal, or not-found)."
+    },
+    "cta.closing": {
+      "category": "CTA",
+      "description": "Home page's own closing CTA band (ClosingCta.jsx) \u2014 distinct component from the shared JoinCta used elsewhere.",
+      "scope": "Only the home template (/)."
+    }
+  },
+  "templates": [
+    {
+      "id": "template.home",
+      "name": "Home",
+      "routeCount": 1,
+      "routes": [
+        "/"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "hero.home",
+        "proof.logo-strip",
+        "feature.platform-features",
+        "feature.product-overview",
+        "feature.enterprise",
+        "proof.testimonials",
+        "content.integrations-faq",
+        "cta.closing",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.about",
+      "name": "About",
+      "routeCount": 1,
+      "routes": [
+        "/about"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "hero.about",
+        "proof.our-mission",
+        "proof.our-values",
+        "proof.the-team",
+        "content.open-roles",
+        "cta.join",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.contact",
+      "name": "Contact",
+      "routeCount": 1,
+      "routes": [
+        "/contact"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "hero.contact",
+        "content.contact-form",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.integrations",
+      "name": "Integrations",
+      "routeCount": 1,
+      "routes": [
+        "/integrations"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "shell.page-lines",
+        "hero.integrations",
+        "content.integrations-list",
+        "cta.join",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.blog-index",
+      "name": "Blog index",
+      "routeCount": 1,
+      "routes": [
+        "/blogs"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "shell.page-lines",
+        "hero.blogs-index",
+        "content.blog-grid",
+        "cta.join",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.blog-post",
+      "name": "Blog post",
+      "routeCount": 21,
+      "routes": null,
+      "routePattern": "/blogs/{slug}",
+      "routeRange": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "shell.page-lines",
+        "hero.blog-post",
+        "content.article-body",
+        "cta.ci-cta",
+        "content.blog-faq",
+        "cta.join",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.case-study",
+      "name": "Case study",
+      "routeCount": 18,
+      "routes": null,
+      "routePattern": "/case-study/{slug}",
+      "routeRange": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "shell.page-lines",
+        "hero.case-study",
+        "content.article-body",
+        "cta.ci-cta",
+        "content.related-case-studies",
+        "cta.join",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.legal",
+      "name": "Legal",
+      "routeCount": 2,
+      "routes": [
+        "/legals/terms-conditions",
+        "/legals/privacy-policy"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "hero.legal",
+        "content.legal-body",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    },
+    {
+      "id": "template.not-found",
+      "name": "Not found",
+      "routeCount": 2,
+      "routes": [
+        "/404",
+        "*"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.announcement-bar",
+        "shell.navbar",
+        "shell.page-lines",
+        "content.not-found",
+        "shell.footer",
+        "shell.cookie-banner"
+      ]
+    }
+  ]
+}

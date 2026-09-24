@@ -1,0 +1,43 @@
+{
+  "id": "cta.customer-intelligence",
+  "purpose": "Mid-article dark conversion band, shared by blog-post and case-study",
+  "measuredFrom": "src/components/sub/Ctas.jsx:98-133",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "primaryCtaLabel": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "primaryCtaHref": {
+        "type": "string"
+      },
+      "secondaryCtaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "secondaryCtaHref": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "heading",
+      "primaryCtaLabel",
+      "primaryCtaHref",
+      "secondaryCtaLabel",
+      "secondaryCtaHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollow": "content.article-body"
+  },
+  "motion": {
+    "pattern": "reveal-tween-04",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

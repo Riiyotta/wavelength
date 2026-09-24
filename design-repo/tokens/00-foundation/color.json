@@ -1,0 +1,26 @@
+{
+  "$note": "Every value is copied verbatim from tailwind.config.js theme.extend.colors (colors are the exact histogram Tailwind was configured with for this clone; nothing here is invented).",
+  "measuredFrom": "tailwind.config.js:9-30",
+  "colors": {
+    "ink": "#262521",
+    "white": "#ffffff",
+    "paper": "#fdfcfb",
+    "paper-80": "#fdfcfbcc",
+    "mist": "#f0f0ee",
+    "stone": "#f4f2f0",
+    "ink-2": "#34332e",
+    "violet": "#a184fa",
+    "pink": "#f677fd",
+    "yellow": "#ffdd03",
+    "orange": "#f9720d",
+    "mint": "#63f6b5",
+    "link-blue": "#678efd",
+    "red": "#ff2244",
+    "hairline": "#28262f1f",
+    "line-5": "rgba(38,37,33,0.05)",
+    "logo-border": "#28262f0d",
+    "badge": "rgba(246,246,246,0.12)",
+    "faq-answer": "rgba(38,37,33,0.8)",
+    "caption-white": "rgba(255,255,255,0.8)"
+  }
+}

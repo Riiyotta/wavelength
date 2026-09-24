@@ -1,0 +1,27 @@
+{
+  "measuredFrom": "tailwind.config.js:83-85, src/components/*.jsx section padding classes (px-5/tablet:px-20/desktop:px-40 repeated on every section)",
+  "maxWidth": {
+    "container": "1200px",
+    "cta-panel": "1400px"
+  },
+  "sectionPadding": {
+    "phone": "0 20px",
+    "tablet": "0 80px",
+    "desktop": "0 160px"
+  },
+  "grid": {
+    "about-values": {
+      "phone": 1,
+      "tablet": 2,
+      "desktop": 4
+    },
+    "product-overview": {
+      "desktop": "5-col / 2-row bento"
+    },
+    "team": {
+      "phone": 2,
+      "tablet": 3,
+      "desktop": 4
+    }
+  }
+}

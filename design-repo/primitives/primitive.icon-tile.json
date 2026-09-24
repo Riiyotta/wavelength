@@ -1,0 +1,16 @@
+{
+  "id": "primitive.icon-tile",
+  "measuredFrom": "src/components/ui.jsx:98-105",
+  "props": {
+    "icon": {
+      "$ref": "asset-role#/decorative-icon"
+    },
+    "accent": {
+      "type": "string"
+    }
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

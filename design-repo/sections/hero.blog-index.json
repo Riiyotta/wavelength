@@ -1,0 +1,69 @@
+{
+  "id": "hero.blog-index",
+  "purpose": "Blog landing hero + single featured post card",
+  "measuredFrom": "src/pages/Blogs.jsx:90-103",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "featuredPost": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxWords": 12
+          },
+          "excerpt": {
+            "type": "string",
+            "maxWords": 20
+          },
+          "cover": {
+            "type": "object",
+            "properties": {
+              "assetRole": {
+                "const": "blog-cover"
+              },
+              "src": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "assetRole",
+              "src"
+            ],
+            "additionalProperties": false
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "excerpt",
+          "cover",
+          "href"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "featuredPost"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

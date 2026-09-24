@@ -1,0 +1,23 @@
+{
+  "id": "primitive.rive-canvas",
+  "measuredFrom": "src/components/RiveCanvas.jsx",
+  "props": {
+    "src": {
+      "$ref": "asset-role#/rive-animation"
+    },
+    "artboard": {
+      "type": "string"
+    },
+    "fit": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string"
+    }
+  },
+  "note": "15+ distinct .riv files across the app (RIV map in src/components/sub/shared.jsx:7-14 plus section-local sources); each is a real, evidence-cited motion asset, never a generator-invented one",
+  "motion": {
+    "pattern": "canvas-loop-or-scroll-driven",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

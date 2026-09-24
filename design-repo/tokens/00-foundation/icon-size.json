@@ -1,0 +1,10 @@
+{
+  "measuredFrom": "src/components/ui.jsx:98-105 (IconTile), src/pages/Integrations.jsx:75-88 (HeroIcon 48px tile)",
+  "sizes": {
+    "icon-tile-desktop": "32px",
+    "icon-tile-phone": "28px",
+    "icon-mask-desktop": "18px",
+    "icon-mask-phone": "14px",
+    "integration-hero-icon": "48px"
+  }
+}

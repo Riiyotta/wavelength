@@ -1,0 +1,47 @@
+{
+  "id": "hero.case-study",
+  "purpose": "Dark case-study hero with cover image and track illustration",
+  "measuredFrom": "src/pages/CaseStudy.jsx:50-77",
+  "content": {
+    "properties": {
+      "title": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "excerpt": {
+        "type": "string",
+        "maxWords": 24
+      },
+      "cover": {
+        "type": "object",
+        "properties": {
+          "assetRole": {
+            "const": "case-study-cover"
+          },
+          "src": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "assetRole",
+          "src"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "title",
+      "excerpt",
+      "cover"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.case-study"
+}

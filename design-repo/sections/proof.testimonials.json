@@ -1,0 +1,94 @@
+{
+  "id": "proof.testimonials",
+  "purpose": "Real named-customer social proof via quote cards",
+  "measuredFrom": "src/components/Testimonials.jsx:1-231",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "logo": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "customer-logo"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            },
+            "quote": {
+              "type": "string",
+              "maxWords": 60
+            },
+            "name": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "role": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "avatar": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "customer-photo"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "logo",
+            "quote",
+            "name",
+            "role",
+            "avatar"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "cards"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "cards[] must reuse the 3 real named customers (Latchel, Lexamica, Rho) exactly or be omitted -- see asset-role customer-quote guidance; never fabricate a new customer"
+  },
+  "motion": {
+    "pattern": "desktop-static-tablet-phone-slideshow-spring",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "homeRouteOnly": true
+}

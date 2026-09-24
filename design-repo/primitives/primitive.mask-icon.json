@@ -1,0 +1,13 @@
+{
+  "id": "primitive.mask-icon",
+  "measuredFrom": "src/components/ui.jsx:26-29",
+  "props": {
+    "src": {
+      "$ref": "asset-role#/decorative-icon"
+    }
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

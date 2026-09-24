@@ -1,0 +1,40 @@
+{
+  "id": "cta.join-the-wave",
+  "purpose": "Reusable closing conversion band with per-page copy, used on every non-home/contact/legal/404 template",
+  "measuredFrom": "src/components/sub/Ctas.jsx:43-90",
+  "content": {
+    "properties": {
+      "title": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 22
+      },
+      "ctaLabel": {
+        "type": "string",
+        "const": "Schedule Demo"
+      },
+      "ctaHref": {
+        "type": "string",
+        "const": "/contact"
+      }
+    },
+    "required": [
+      "title",
+      "body",
+      "ctaLabel",
+      "ctaHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "pattern": "loop-rive-or-video",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

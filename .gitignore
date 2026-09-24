@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# internal build scratch — raw measurements/screenshots against the original site, not part of the shipped clone
+recon/
+
+# regenerated fresh from design-repo/ — never commit alongside the live folder
+design-repo.zip
+
+.DS_Store
+*.log
+npm-debug.log*

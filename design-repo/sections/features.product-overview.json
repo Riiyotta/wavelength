@@ -1,0 +1,71 @@
+{
+  "id": "features.product-overview",
+  "purpose": "Showcase 4 product surfaces in a bento grid with looping demo video",
+  "measuredFrom": "src/components/ProductOverview.jsx:1-148",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 20
+            },
+            "video": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "product-video"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "video"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "cards"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "loop-rive-or-video",
+    "reducedMotionFallback": "first-frame-static"
+  },
+  "homeRouteOnly": true
+}

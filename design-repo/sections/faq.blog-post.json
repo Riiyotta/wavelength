@@ -1,0 +1,54 @@
+{
+  "id": "faq.blog-post",
+  "purpose": "Post-article FAQ accordion, blog-post only",
+  "measuredFrom": "src/components/sub/Article.jsx:159-188",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "subheading": {
+        "type": "string",
+        "maxWords": 26
+      },
+      "faqItems": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "properties": {
+            "q": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "a": {
+              "type": "string",
+              "maxWords": 45
+            }
+          },
+          "required": [
+            "q",
+            "a"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "subheading",
+      "faqItems"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "accordion-height-tween",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.blog-post"
+}

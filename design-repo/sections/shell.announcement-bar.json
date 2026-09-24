@@ -1,0 +1,35 @@
+{
+  "id": "shell.announcement-bar",
+  "purpose": "Drive awareness of the rebrand and route traffic to the flagship post",
+  "measuredFrom": "src/components/Navbar.jsx:16-29",
+  "content": {
+    "properties": {
+      "text": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "linkLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "linkHref": {
+        "type": "string",
+        "assetRole": null
+      }
+    },
+    "required": [
+      "text",
+      "linkLabel",
+      "linkHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "mustBeFirst": true,
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "none",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

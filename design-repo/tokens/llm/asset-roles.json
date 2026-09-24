@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "guidancePolicy": "may-generate-new (a generator may synthesize a fresh, on-brand asset for this role) | must-reuse-exact-or-omit (the generator must reuse one of the real, already-bundled files verbatim, or omit the field entirely -- it must never invent a new one) | must-not-fabricate (stricter than reuse-or-omit: this role must never be populated by a generator at all; a human supplies it)",
+  "roles": {
+    "screenshot": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "product-UI screenshots (e.g. Hero.jsx's accounts-table image) depict the real, specific product surface -- reuse the exact bundled file or omit.",
+      "measuredFrom": "src/components/Hero.jsx:62-67"
+    },
+    "customer-logo": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "REAL third-party company logos (Y Combinator, Village Global, Apple, Intuit, Convoy, Berkeley plus the LogoStrip rotator's 9 customer logos) -- a generator must never fabricate a new logo or a variation of a real one. Compliance-critical: these are real companies' real marks.",
+      "measuredFrom": "src/components/LogoStrip.jsx:6-16, src/pages/About.jsx:235-242"
+    },
+    "customer-photo": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "REAL named customer headshots (Jennifer Lye / Latchel, Kate Anand / Lexamica, JD Reichenbach / Rho) paired with a real quote and real name -- never generate a new 'customer' photo, name or quote; omission is always the safe fallback.",
+      "measuredFrom": "src/components/Testimonials.jsx:7-54"
+    },
+    "partner-logo": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "REAL third-party integration-vendor logos (Gmail, HubSpot, Intercom, Salesforce, Slack, Linear, Zendesk, etc., 40+ total per PAGES_ASSET_MANIFEST.json) -- never fabricate a new integration partner or logo variation.",
+      "measuredFrom": "src/pages/Integrations.jsx:19-25, PAGES_ASSET_MANIFEST.json"
+    },
+    "team-photo": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "real photography used on the About hero -- reuse exact or omit; do not generate new people.",
+      "measuredFrom": "src/pages/About.jsx:57-58"
+    },
+    "blog-cover": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "every one of the 21 posts shares the identical CMS cover image on the real source -- reuse that exact file for any blog-post/blog-index instance; never generate a distinct cover per post.",
+      "measuredFrom": "src/data/blogs.json:16 (coverImageNote)"
+    },
+    "case-study-cover": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "every one of the 18 case studies shares the identical placeholder cover image on the real source -- same rule as blog-cover.",
+      "measuredFrom": "src/data/case-studies.json:15 (coverImageNote)"
+    },
+    "decorative-illustration": {
+      "policy": "may-generate-new",
+      "note": "abstract SVG hero art (e.g. blog-hero-arrow.svg) with no real-world referent -- safe for a generator to synthesize a new on-brand variant.",
+      "measuredFrom": "src/data/blogs.json:18-19"
+    },
+    "decorative-icon": {
+      "policy": "may-generate-new",
+      "note": "abstract feature/value SVG icons (icon-ask-ai.svg, about-empathy.svg, etc.) -- no real-world referent, safe to generate new ones in the same style.",
+      "measuredFrom": "src/pages/About.jsx:180-189, src/components/PlatformFeatures.jsx:5-36"
+    },
+    "product-video": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "real captured product-UI screen recordings (Feature_A/B/C.mp4, ProductOverview 1-4.mp4) -- depict the actual product; never generate a synthetic substitute.",
+      "measuredFrom": "src/components/PlatformFeatures.jsx:11,21,32, src/components/ProductOverview.jsx (LoopVideo src usages)"
+    },
+    "rive-animation": {
+      "policy": "must-reuse-exact-or-omit",
+      "note": "15+ real .riv motion-graphics files with hand-authored artboards/state machines -- a generator cannot meaningfully author a new one; reuse an exact existing file+artboard pair or omit the decorative layer entirely.",
+      "measuredFrom": "src/components/sub/shared.jsx:7-14 (RIV map) plus per-section RiveCanvas src usages"
+    }
+  }
+}

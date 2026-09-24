@@ -1,0 +1,64 @@
+{
+  "id": "content.team-grid",
+  "purpose": "Team pedigree via backer/employer logo grid",
+  "measuredFrom": "src/pages/About.jsx:235-272",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "logo": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "partner-logo"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "name",
+            "logo"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "body",
+      "logos"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "reveal-stagger",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

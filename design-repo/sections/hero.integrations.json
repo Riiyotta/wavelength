@@ -1,0 +1,51 @@
+{
+  "id": "hero.integrations",
+  "purpose": "Announce the integrations catalog with an animated icon cluster",
+  "measuredFrom": "src/pages/Integrations.jsx:133-152",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "clusterIcons": {
+        "type": "array",
+        "minItems": 6,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "properties": {
+            "assetRole": {
+              "const": "partner-logo"
+            },
+            "src": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "assetRole",
+            "src"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "body",
+      "clusterIcons"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "viewport-gated-loop-tween",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

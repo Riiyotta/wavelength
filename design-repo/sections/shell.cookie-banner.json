@@ -1,0 +1,40 @@
+{
+  "id": "shell.cookie-banner",
+  "purpose": "EU-style consent notice, persisted locally",
+  "measuredFrom": "src/components/CookieBanner.jsx:1-70",
+  "content": {
+    "properties": {
+      "title": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 40
+      },
+      "acceptLabel": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "rejectLabel": {
+        "type": "string",
+        "maxWords": 2
+      }
+    },
+    "required": [
+      "title",
+      "body",
+      "acceptLabel",
+      "rejectLabel"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "mustBeLast": true,
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "enter-exit-spring",
+    "reducedMotionFallback": "static-final-state"
+  }
+}

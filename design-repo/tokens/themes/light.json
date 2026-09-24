@@ -1,0 +1,13 @@
+{
+  "name": "light",
+  "resolves": {
+    "text.primary": "#262521",
+    "text.inverse": "#ffffff",
+    "surface.page": "#ffffff",
+    "surface.brand": "#262521",
+    "surface.subtle": "#f0f0ee",
+    "surface.card": "#f4f2f0",
+    "border.default": "#28262f1f"
+  },
+  "note": "The clone is single-theme (no dark-mode toggle observed anywhere in src/ or the specs); this is the only theme instance and is the defaultTheme in registry.manifest.json."
+}

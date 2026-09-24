@@ -1,0 +1,41 @@
+{
+  "id": "hero.not-found",
+  "purpose": "Full-viewport 404 fallback, real HTTP 200 in this SPA",
+  "measuredFrom": "src/pages/NotFound.jsx:1-31",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "ctaLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "ctaHref": {
+        "type": "string",
+        "const": "/"
+      }
+    },
+    "required": [
+      "heading",
+      "body",
+      "ctaLabel",
+      "ctaHref"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true,
+    "note": "src/App.jsx:37-38 routes both the literal /404 path and the catch-all * to this same component; the SPA returns HTTP 200 for both (client-side router, not a server 404) -- document as deliberate SPA behavior, not a defect."
+  },
+  "motion": {
+    "pattern": "appear-spring",
+    "reducedMotionFallback": "static-final-state"
+  },
+  "routeRestriction": "template.not-found"
+}

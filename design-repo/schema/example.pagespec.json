@@ -1,0 +1,365 @@
+{
+  "route": "/",
+  "template": "template.home",
+  "nodes": [
+    {
+      "section": "shell.announcement-bar",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "text": "Assembly is now Wavelength!",
+        "linkLabel": "Read More",
+        "linkHref": "/blogs/assembly-is-now-wavelength"
+      },
+      "motion": {
+        "pattern": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "shell.navbar",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "links": [
+          {
+            "label": "Integrations",
+            "href": "/integrations"
+          },
+          {
+            "label": "Blogs",
+            "href": "/blogs"
+          },
+          {
+            "label": "About us",
+            "href": "/about"
+          }
+        ],
+        "ctaLabel": "Schedule Demo",
+        "ctaHref": "/contact"
+      },
+      "motion": {
+        "pattern": "hamburger-height-tween",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "hero.home",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "Welcome to Customer SuperIntelligence",
+        "subheading": "Finally, an AI-native platform where modern GTM teams can access, analyze, and act on revenue data in a single platform",
+        "ctaLabel": "Schedule Demo",
+        "ctaHref": "/contact",
+        "screenshot": {
+          "assetRole": "screenshot",
+          "src": "/assets/images/8YfN5DvRoONMgkbgb2Y8Y5iOw.png"
+        }
+      },
+      "motion": {
+        "pattern": "appear-spring",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "proof.logo-strip",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "caption": "Trusted by Hundreds of Customer Obsessed Companies:",
+        "logos": [
+          {
+            "assetRole": "customer-logo",
+            "src": "/assets/images/CI07VkDq5EjaI9fvzZtWqszrs0.png"
+          },
+          {
+            "assetRole": "customer-logo",
+            "src": "/assets/images/cCVpgYDbMKapsGtJzx5rYRflvDc.png"
+          },
+          {
+            "assetRole": "customer-logo",
+            "src": "/assets/images/p2a7xf2NHWUddtC1UUKF6kFc1U.png"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "grid-rotator-or-ticker-loop",
+        "reducedMotionFallback": "first-frame-static"
+      }
+    },
+    {
+      "section": "features.platform-grid",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "The AI-native Customer Intelligence Platform purpose built for post sales teams",
+        "subheading": "Wavelength brings your entire customer data stack into one place - with powerful AI agents that uncover important signals and act instantly",
+        "features": [
+          {
+            "label": "Ask AI",
+            "title": "Fields and Tables are Dead",
+            "body": "Modern GTM teams can't spend hours looking through CRM tables for one field to act. They use our AI to speak directly with their revenue data.",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/Feature_A.mp4"
+            }
+          },
+          {
+            "label": "Account Prioritzation",
+            "title": "Customer needs - your priorities: on the same wave",
+            "body": "Wavelength's powerful revenue AI agents automagically prioritize your accounts based on customer signals from across your data stack.",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/Feature_B.mp4"
+            }
+          },
+          {
+            "label": "Agent Builder",
+            "title": "Revenue Signals meet instant scalable action",
+            "body": "Gone are the days of pasting the same message 100 times in Gmail. Welcome to instantly scalable personalized outreach based on customer signals, with a single click.",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/Feature_C.mp4"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "reducedMotionFallback": "first-frame-static"
+      }
+    },
+    {
+      "section": "features.product-overview",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "Product Overview",
+        "subheading": "All your revenue data. One intelligent system. Instant action.",
+        "cards": [
+          {
+            "title": "Single Pane of Glass",
+            "body": "Unify all of your conversational, usage, and CRM data under one roof",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/1.mp4"
+            }
+          },
+          {
+            "title": "Account Insights",
+            "body": "Get instant highlights on every account in your book of business",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/2.mp4"
+            }
+          },
+          {
+            "title": "Customer Inbox Manager",
+            "body": "Never miss a beat on your customer interactions",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/3.mp4"
+            }
+          },
+          {
+            "title": "No Touch Onboarding",
+            "body": "Track your customer's journey in one integrated system",
+            "video": {
+              "assetRole": "product-video",
+              "src": "/assets/videos/4.mp4"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "reducedMotionFallback": "first-frame-static"
+      }
+    },
+    {
+      "section": "proof.enterprise-scale",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "Built for Enterprise Scale",
+        "subheading": "The first Customer Happiness Platform purpose built for post-sales teams to track your customers' journey from the moment they onboard till the day they expand.",
+        "ctaLabel": "Schedule Demo",
+        "ctaHref": "/contact",
+        "items": [
+          {
+            "n": "01",
+            "title": "Enterprise-Ready",
+            "body": "Built to handle high-volume teams with reliable performance, robust security, and seamless scaling."
+          },
+          {
+            "n": "02",
+            "title": "Aligned Teams",
+            "body": "All customer data flows into one system, reducing noise and improving decision-making."
+          },
+          {
+            "n": "03",
+            "title": "Secure by Design",
+            "body": "Data controls, privacy standards, and protected workflows ensure enterprise-grade safety end-to-end."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "canvas-loop-or-scroll-driven",
+        "reducedMotionFallback": "first-frame-static"
+      }
+    },
+    {
+      "section": "proof.testimonials",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "Customer success metrics on track.",
+        "subheading": "Your revenue, your customers, finally speaking clearly.",
+        "cards": [
+          {
+            "logo": {
+              "assetRole": "customer-logo",
+              "src": "/assets/images/52gP4Zu0Cx4jDCo8NOg5RMqHZQ4.png"
+            },
+            "quote": "Service at scale only works when insight guides action. Wavelength supports a more deliberate approach-one that strengthens trust and sustains long-term relationships.",
+            "name": "Jennifer Lye",
+            "role": "VP Service Operations @ Latchel",
+            "avatar": {
+              "assetRole": "customer-photo",
+              "src": "/assets/images/6HfsizF7I1oslgzRCogDe86z9c.jpeg"
+            }
+          },
+          {
+            "logo": {
+              "assetRole": "customer-logo",
+              "src": "/assets/images/LH4TFynfdvmGBntyW6FWjA2qc.png"
+            },
+            "quote": "Wavelength reflects how we believe client relationships should be managed: with context, continuity, and care. It gives our team the clarity to serve clients thoughtfully as we scale.",
+            "name": "Kate Anand",
+            "role": "VP of Customer Success @ Lexamica",
+            "avatar": {
+              "assetRole": "customer-photo",
+              "src": "/assets/images/NmYHButanta1IQNIWCsoUxoSwnQ.jpeg"
+            }
+          },
+          {
+            "logo": {
+              "assetRole": "customer-logo",
+              "src": "/assets/images/z0kB33hEOl5n5YkLPjkR24t40.png"
+            },
+            "quote": "In business banking, post-sales is about trust and timing. Wavelength surfaces the right customer signals at the right moment, allowing our team to engage proactively, strengthen relationships, and grow accounts in a thoughtful, compliant way.",
+            "name": "JD Reichenbach",
+            "role": "Head of Growth Accounts @ Rho",
+            "avatar": {
+              "assetRole": "customer-photo",
+              "src": "/assets/images/32tIMnJWk18CHrA4KATxa0Ei0.jpeg"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "desktop-static-tablet-phone-slideshow-spring",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "faq.integrations-promo",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "bannerHeading": "Explore our Integrations",
+        "bannerBody": "With over 40+ integrations to streamline your workflow, from Slack to Zendesk, supercharge your team in just a few clicks!",
+        "bannerCtaLabel": "Explore Integrations",
+        "bannerCtaHref": "/integrations",
+        "faqHeading": "Frequently Asked",
+        "faqSubheading": "The First AI-Native CRM purpose built for post-sales teams to track your customers' journey from the moment they onboard till the day they expand.",
+        "faqItems": [
+          {
+            "q": "How does Wavelength integrate with our existing tools?",
+            "a": "Wavelength connects with Salesforce, Email, and your internal systems (support, calls, usage) so all customer conversations and data flow into one place without changing your workflows."
+          },
+          {
+            "q": "Is Wavelength secure for enterprise use?",
+            "a": "Wavelength has worked with some of the largest enterprises in the most regulated industries in the world. It's been designed with the highest grade security standards. It is also compliant with SOC II and GDPR."
+          },
+          {
+            "q": "Can we customize workflows for our team?",
+            "a": "Wavelength's dynamic workflow system is completly customizable for individual organzations, teams and even contributors. Simply specify the workspace the workflow will live in!"
+          },
+          {
+            "q": "How does Wavelength help Account Management teams?",
+            "a": "Wavelength allows modern AM teams to automatically prioritize their accounts, get insights instantly, and act within a single system, without the hassle of table lookups and constant context switching."
+          },
+          {
+            "q": "Does Wavelength support large-scale customer operations?",
+            "a": "Some of Wavelength's customers support 10s of thousands of customers across the globe. They use our system to scale customer experiences without a hitch."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "accordion-height-tween",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "cta.closing",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "heading": "The only customer platform you will ever need",
+        "primaryCtaLabel": "Schedule Demo",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "Contact Us",
+        "secondaryCtaHref": "/contact"
+      },
+      "motion": {
+        "pattern": "canvas-loop-or-scroll-driven",
+        "reducedMotionFallback": "first-frame-static"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "columns": [
+          [
+            "Case Studies",
+            "Integrations",
+            "About us",
+            "Blogs"
+          ],
+          [
+            "Privacy Policy",
+            "Terms & Conditions"
+          ]
+        ],
+        "copyrightLine": "Copyright Assembly Works Inc. 2024 Built in San Francisco, CA",
+        "socialLabels": [
+          "Linkedin",
+          "Email"
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "shell.cookie-banner",
+      "required": true,
+      "repeatable": false,
+      "content": {
+        "title": "Cookie Settings",
+        "body": "We use cookies to enhance your experience, analyze site traffic and deliver personalized content. Read our Cookie Policy.",
+        "acceptLabel": "Accept",
+        "rejectLabel": "Reject"
+      },
+      "motion": {
+        "pattern": "enter-exit-spring",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

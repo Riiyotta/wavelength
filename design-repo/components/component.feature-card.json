@@ -1,0 +1,18 @@
+{
+  "id": "component.feature-card",
+  "measuredFrom": "src/components/PlatformFeatures.jsx:39-84",
+  "composesOf": [
+    "primitive.icon-tile",
+    "primitive.text-link",
+    "primitive.loop-video"
+  ],
+  "props": {
+    "textFirst": {
+      "type": "boolean"
+    }
+  },
+  "motion": {
+    "pattern": "none (video handles its own loop)",
+    "reducedMotionFallback": "first-frame-static"
+  }
+}

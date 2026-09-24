@@ -1,0 +1,65 @@
+{
+  "id": "content.values-grid",
+  "purpose": "Company values as an icon-card grid",
+  "measuredFrom": "src/pages/About.jsx:180-229",
+  "content": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "values": {
+        "type": "array",
+        "minItems": 8,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "properties": {
+            "icon": {
+              "type": "object",
+              "properties": {
+                "assetRole": {
+                  "const": "decorative-icon"
+                },
+                "src": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assetRole",
+                "src"
+              ],
+              "additionalProperties": false
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 16
+            }
+          },
+          "required": [
+            "icon",
+            "title",
+            "body"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "heading",
+      "values"
+    ],
+    "additionalProperties": false
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "reveal-stagger",
+    "reducedMotionFallback": "static-final-state"
+  }
+}
