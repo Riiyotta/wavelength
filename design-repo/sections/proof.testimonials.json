@@ -90,5 +90,11 @@
     "pattern": "desktop-static-tablet-phone-slideshow-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/Testimonials.jsx:1-231",
+    "phone": "Navigation arrows are hidden (bare default hides them or a mobile-specific swipe gesture is implied by their absence); card panel sits flush.",
+    "tablet": "Card panel gets an inset rounded background (tablet:inset-5 tablet:rounded-card) with corner accents offset (tablet:top-[-20px] tablet:bottom-[-20px]); nav arrows become visible (tablet:block); heading steps to tablet:text-h3-t.",
+    "desktop": "Nav arrows that were shown on tablet are hidden again (desktop:hidden -- desktop instead relies on a different interaction, e.g. drag/scroll); section overflow is explicitly clipped (desktop:overflow-clip); heading steps to desktop:text-h3 with desktop:text-body-l."
+  }
 }

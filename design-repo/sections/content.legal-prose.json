@@ -46,5 +46,11 @@
     "pattern": "appear-once",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.legal"
+  "routeRestriction": "template.legal",
+  "responsive": {
+    "measuredFrom": "src/pages/Legal.jsx:65-95, src/data/legal.js",
+    "phone": "No breakpoint-prefixed classes anywhere in the rendered block range (Legal.jsx:65-95) -- layout is uniform across all widths (fixed max-width column, no reflow).",
+    "tablet": "Same as phone -- no material difference.",
+    "desktop": "Same as phone -- no material difference."
+  }
 }

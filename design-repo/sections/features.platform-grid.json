@@ -72,5 +72,11 @@
     "pattern": "loop-rive-or-video",
     "reducedMotionFallback": "first-frame-static"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/PlatformFeatures.jsx:1-110",
+    "phone": "Feature tiles use a fixed aspect ratio (aspect-[1.41364], bare) with 30px padding on each tile.",
+    "tablet": "Same per-tile aspect ratio persists (tablet:aspect-[1.41364]); the tile row lays out with a gap-8 stack instead of the bare default.",
+    "desktop": "Tiles drop the fixed aspect ratio in favor of a fixed height (desktop:h-full desktop:aspect-auto) with a 65%-width media column (desktop:w-[65%] desktop:max-w-[640px]) beside a flexed text column (desktop:flex-1 desktop:justify-between)."
+  }
 }

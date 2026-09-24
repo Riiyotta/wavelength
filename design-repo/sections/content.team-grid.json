@@ -60,5 +60,11 @@
   "motion": {
     "pattern": "reveal-stagger",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/About.jsx:235-272",
+    "phone": "2-column logo grid (bare grid-cols-2).",
+    "tablet": "3-column grid (tablet:grid-cols-3); logo tiles grow (tablet:h-10 tablet:w-10).",
+    "desktop": "4-column grid (desktop:grid-cols-4); outer padding widens (desktop:px-40); heading steps to desktop:text-h4."
   }
 }

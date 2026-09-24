@@ -63,5 +63,11 @@
     "pattern": "loop-rive-or-video",
     "reducedMotionFallback": "first-frame-static"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/Enterprise.jsx:1-90",
+    "phone": "Divider element has no fixed height (grows with content); stat panel sits flush to its container edges.",
+    "tablet": "Divider becomes a fixed-height vertical rule (tablet:h-auto tablet:self-stretch tablet:w-px); stat panel insets from the container (tablet:top-0 tablet:bottom-5 tablet:left-5 tablet:right-5 tablet:rounded-card); heading steps to tablet:text-h3-t; stat rows switch to a row layout (tablet:flex-row) with a 40px gap (tablet:gap-10).",
+    "desktop": "Outer padding widens (desktop:px-40); heading steps to desktop:text-h3 with desktop:text-body-l; the stat panel corner radius switches to the larger desktop:rounded-panel-lg token; divider min-height collapses to 0 (desktop:min-h-0, vs. tablet:min-h-[180px])."
+  }
 }

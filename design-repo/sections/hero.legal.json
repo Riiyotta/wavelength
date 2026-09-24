@@ -26,5 +26,11 @@
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.legal"
+  "routeRestriction": "template.legal",
+  "responsive": {
+    "measuredFrom": "src/pages/Legal.jsx:102-116",
+    "phone": "Hero stacks tight with minimal bottom padding.",
+    "tablet": "Bottom padding grows (tablet:pb-20); a decorative top-20 offset is introduced; heading steps to tablet:text-title-t.",
+    "desktop": "Heading steps to desktop:text-title with desktop:text-body-l for the 'updated' date line; outer padding widens (desktop:px-40)."
+  }
 }

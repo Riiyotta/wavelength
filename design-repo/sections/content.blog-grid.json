@@ -64,5 +64,11 @@
   "motion": {
     "pattern": "reveal-stagger",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/Blogs.jsx:11,105-116; src/data/blogs.json:2 (index-quirk note)",
+    "phone": "1 column (bare grid-cols-1, no prefix).",
+    "tablet": "2 columns (tablet:grid-cols-2).",
+    "desktop": "3 columns (desktop:grid-cols-3)."
   }
 }

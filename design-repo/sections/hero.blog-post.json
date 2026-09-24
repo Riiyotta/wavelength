@@ -52,5 +52,11 @@
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.blog-post"
+  "routeRestriction": "template.blog-post",
+  "responsive": {
+    "measuredFrom": "src/pages/BlogPost.jsx:16-42",
+    "phone": "Hero section is a fixed 510px tall box.",
+    "tablet": "Section height grows to a fixed 660px (tablet:h-[660px]); hero art widens to 90% (tablet:w-[90%]); heading steps to tablet:text-title-t.",
+    "desktop": "Section height grows again to a fixed 740px (desktop:h-[740px]); heading steps to desktop:text-title with desktop:text-body-l byline/excerpt copy; outer padding widens (desktop:px-40)."
+  }
 }

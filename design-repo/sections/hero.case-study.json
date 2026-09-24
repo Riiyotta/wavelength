@@ -43,5 +43,11 @@
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.case-study"
+  "routeRestriction": "template.case-study",
+  "responsive": {
+    "measuredFrom": "src/pages/CaseStudy.jsx:50-77",
+    "phone": "Track/cover art anchored with a small negative bottom offset (bottom-[-10px], bare).",
+    "tablet": "Track art insets from the section edges (tablet:inset-x-[60px] tablet:bottom-[-20px]); cover image gets a fixed 216px height (tablet:h-[216px] tablet:w-[400px]); heading steps to tablet:text-title-t.",
+    "desktop": "Track art insets widen further (desktop:inset-x-[130px]); cover image height grows to a fixed 242.4px (desktop:h-[242.4px]); heading steps to desktop:text-title with desktop:text-body-l."
+  }
 }

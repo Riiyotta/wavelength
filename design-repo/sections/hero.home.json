@@ -53,5 +53,11 @@
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/Hero.jsx:1-72",
+    "phone": "Hero screenshot/media sits at a fixed 360px height in a portrait-ish aspect ratio (tablet default; phone uses the bare aspect-[0.877573] value from the same rule set).",
+    "tablet": "Media grows to a max-width of 1500px (tablet:max-w-[1500px]) with the portrait aspect ratio (tablet:aspect-[0.877573]); heading steps to tablet:text-h1-t; content gap narrows to 60px (tablet:gap-[60px]).",
+    "desktop": "Media switches from a fixed aspect ratio to a fixed height (desktop:aspect-auto desktop:h-[923px]); content gap widens to 80px (desktop:gap-20); heading steps to desktop:text-h1 with desktop:text-body-l subcopy."
+  }
 }

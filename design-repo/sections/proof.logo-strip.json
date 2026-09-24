@@ -42,5 +42,11 @@
     "pattern": "grid-rotator-or-ticker-loop",
     "reducedMotionFallback": "first-frame-static"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/LogoStrip.jsx:1-153",
+    "phone": "Logo row scrolls/loops with default (untruncated) label text.",
+    "tablet": "Outer padding narrows to a specific 79px value (tablet:px-[79px]); label centers and wraps to a fixed width instead of the phone's whitespace-pre flow (tablet:text-center tablet:w-auto tablet:whitespace-pre still applies -- i.e. the label itself doesn't wrap, but its container does).",
+    "desktop": "Outer padding widens to px-40 (a wider gutter than tablet's 79px value); logo glyphs grow slightly (desktop:h-6)."
+  }
 }

@@ -39,5 +39,11 @@
   "motion": {
     "pattern": "reveal-tween-04",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/sub/Ctas.jsx:98-133",
+    "phone": "Decorative art panel sits inline with the content stacked below it.",
+    "tablet": "Content switches to items-center alignment with a 60px horizontal gutter (tablet:px-[60px]); decorative art becomes absolutely positioned with a portrait aspect ratio (tablet:aspect-[1420/3144]) and no rotation (tablet:rotate-0); heading steps to tablet:text-h3-t; content max-width narrows to 70% (tablet:max-w-[70%]).",
+    "desktop": "Content switches to a row layout (desktop:flex-row desktop:items-center) with the art anchored to the left edge (desktop:left-[-83px]); content max-width widens to 85% (desktop:max-w-[85%]); outer padding widens (desktop:px-40)."
   }
 }

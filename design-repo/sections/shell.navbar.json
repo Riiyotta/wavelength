@@ -49,5 +49,11 @@
   "motion": {
     "pattern": "hamburger-height-tween",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/Navbar.jsx:31-125",
+    "phone": "Hamburger/mobile-menu trigger is shown (bare default); desktop nav links are not rendered at all in the DOM at this width.",
+    "tablet": "Desktop-style inline nav links become visible (tablet:flex) and the mobile hamburger trigger is hidden (tablet:hidden) -- the breakpoint switch happens at the tablet boundary, not a separate desktop-only rule.",
+    "desktop": "Same as tablet -- no further navbar-specific rule beyond the tablet:flex / tablet:hidden switch (desktop inherits tablet's nav layout)."
   }
 }

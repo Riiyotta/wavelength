@@ -208,18 +208,26 @@ def check_citations():
                 data = json.load(f)
             except json.JSONDecodeError:
                 continue
-        mf = data.get("measuredFrom") if isinstance(data, dict) else None
-        if not mf:
+        if not isinstance(data, dict):
             continue
-        citations = mf if isinstance(mf, list) else [c.strip() for c in re.split(r",\s*", mf)]
-        for c in citations:
-            # These are INTERNAL-to-app citations (e.g. "src/App.jsx:1-45"); resolve against APP_ROOT.
-            checked += 1
-            issue = _resolve_citation(APP_ROOT, c)
-            if issue and os.path.isdir(os.path.join(APP_ROOT, "src")):
-                bad.append(f"{rel} measuredFrom citation invalid: {issue}")
-            elif issue:
-                pass  # sibling app tree not present at all -- handled as a warn below, not per-citation noise
+        # Top-level measuredFrom, plus the same field nested one level under "responsive"
+        # (a section's responsive-behavior contract cites its own evidence and is checked
+        # exactly like the section's own top-level citation -- not spot-checked by hand).
+        mf_fields = []
+        if data.get("measuredFrom"):
+            mf_fields.append(("measuredFrom", data["measuredFrom"]))
+        if isinstance(data.get("responsive"), dict) and data["responsive"].get("measuredFrom"):
+            mf_fields.append(("responsive.measuredFrom", data["responsive"]["measuredFrom"]))
+        for field_name, mf in mf_fields:
+            citations = mf if isinstance(mf, list) else [c.strip() for c in re.split(r",\s*", mf)]
+            for c in citations:
+                # These are INTERNAL-to-app citations (e.g. "src/App.jsx:1-45"); resolve against APP_ROOT.
+                checked += 1
+                issue = _resolve_citation(APP_ROOT, c)
+                if issue and os.path.isdir(os.path.join(APP_ROOT, "src")):
+                    bad.append(f"{rel} {field_name} citation invalid: {issue}")
+                elif issue:
+                    pass  # sibling app tree not present at all -- handled as a warn below, not per-citation noise
     if not os.path.isdir(os.path.join(APP_ROOT, "src")):
         warn(f"citation-range validity: sibling app source tree not found at {APP_ROOT} -- citations against it were skipped gracefully (this is expected once design-repo/ is zipped/copied standalone)")
     if bad:

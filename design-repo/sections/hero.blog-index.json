@@ -65,5 +65,11 @@
   "motion": {
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/Blogs.jsx:90-103",
+    "phone": "Hero content stacked tight, bottom padding minimal.",
+    "tablet": "Bottom padding grows (tablet:pb-[60px]); heading steps to tablet:text-title-t; content gap widens (tablet:gap-[50px]).",
+    "desktop": "Bottom padding grows again (desktop:pb-20); heading steps to desktop:text-title with desktop:text-body-l subcopy; outer padding widens (desktop:px-40)."
   }
 }

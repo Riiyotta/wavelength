@@ -67,5 +67,11 @@
     "pattern": "none",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.case-study"
+  "routeRestriction": "template.case-study",
+  "responsive": {
+    "measuredFrom": "src/pages/CaseStudy.jsx:13-16,82-92",
+    "phone": "1-column grid; only 2 related cards are ever selected/shown (see relatedFor()).",
+    "tablet": "2-column grid (tablet:grid-cols-2); the 3rd related card is explicitly hidden (tablet:hidden) to avoid an orphaned single card in the last row.",
+    "desktop": "3-column grid (desktop:grid-cols-3); the 3rd card that was hidden on tablet is shown again (desktop:flex)."
+  }
 }

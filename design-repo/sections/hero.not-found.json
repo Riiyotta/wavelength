@@ -37,5 +37,11 @@
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.not-found"
+  "routeRestriction": "template.not-found",
+  "responsive": {
+    "measuredFrom": "src/pages/NotFound.jsx:1-31",
+    "phone": "Message stacks tight with minimal bottom padding.",
+    "tablet": "Bottom padding grows (tablet:pb-20); content gap widens (tablet:gap-5); heading steps to tablet:text-title-t.",
+    "desktop": "Heading steps to desktop:text-title with desktop:text-body-l; outer padding widens (desktop:px-40)."
+  }
 }

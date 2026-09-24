@@ -69,5 +69,11 @@
     "pattern": "accordion-height-tween",
     "reducedMotionFallback": "static-final-state"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/IntegrationsFaq.jsx:1-147",
+    "phone": "Decorative art box uses a taller aspect ratio and stacks above the FAQ column.",
+    "tablet": "Art box switches to a portrait-ish aspect ratio (tablet:aspect-[1.625]) and sits beside the FAQ column at a fixed width (tablet:flex-1 tablet:w-px); questions get the larger tablet:text-faq-q type size; heading steps to tablet:text-h3-t.",
+    "desktop": "Art box widens to a landscape aspect ratio (desktop:aspect-[2.31579]); FAQ column switches to desktop:flex-row layout with a fixed-width first column; outer padding widens (desktop:px-40)."
+  }
 }

@@ -31,5 +31,11 @@
   "motion": {
     "pattern": "none",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/Navbar.jsx:16-29",
+    "phone": "No breakpoint-prefixed classes in the component's render range (Navbar.jsx:16-29) -- fixed 35.6px height banner, identical at every width.",
+    "tablet": "Same as phone -- no material difference.",
+    "desktop": "Same as phone -- no material difference."
   }
 }

@@ -1,6 +1,6 @@
 {
   "repositoryId": "wavelength-clone-design-repo",
-  "repositoryVersion": "1.0.0",
+  "repositoryVersion": "1.1.0",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "versionFieldNote": "allowlistVersion is machine-checked: extraction/verify_all.py fails the run if it drifts from tokens/llm/component-allowlist.json's own allowlistVersion field. repositoryVersion and pageSpecVersion are documentation-only, hand-maintained markers -- nothing automatically enforces them; they exist for human changelog tracking only.",

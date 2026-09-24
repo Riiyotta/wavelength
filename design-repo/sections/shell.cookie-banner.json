@@ -36,5 +36,11 @@
   "motion": {
     "pattern": "enter-exit-spring",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/CookieBanner.jsx:1-70",
+    "phone": "No breakpoint-prefixed classes anywhere in the component (CookieBanner.jsx:1-70) -- identical layout at every width.",
+    "tablet": "Same as phone -- no material difference.",
+    "desktop": "Same as phone -- no material difference."
   }
 }

@@ -57,5 +57,11 @@
   "motion": {
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/About.jsx:44-81",
+    "phone": "Photo pair and center track image sit in a fixed 390x511 box (see PHOTO_BOX phone values, 80px squares).",
+    "tablet": "Box becomes the full max-width container (tablet:max-w-container tablet:w-full tablet:h-full); photo squares grow to 100px; track image widens to 110% (tablet:top-[340px] tablet:w-[110%]); heading steps to tablet:text-title-t.",
+    "desktop": "Photo squares grow again to 140px (per PHOTO_BOX desktop values); track image widens further to 120% (desktop:top-[400px] desktop:w-[120%]); heading steps to desktop:text-title; outer bottom padding grows (desktop:pb-[300px])."
   }
 }

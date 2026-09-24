@@ -36,5 +36,11 @@
   "motion": {
     "pattern": "loop-rive-or-video",
     "reducedMotionFallback": "first-frame-static"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/sub/Ctas.jsx:43-90",
+    "phone": "Full-bleed padding (tablet:px-5 fallback applies from tablet up; phone uses the bare/default horizontal padding), vertical padding tight around the CTA card.",
+    "tablet": "Vertical padding grows substantially (tablet:py-[100px]); heading max-width narrows to 560px (tablet:max-w-[560px]) with no card padding (tablet:p-0); heading steps to tablet:text-h3-t.",
+    "desktop": "Vertical padding steps to a fixed 24-unit value (desktop:py-24); heading max-width widens to 680px (desktop:max-w-[680px]); heading steps to desktop:text-h3."
   }
 }

@@ -50,5 +50,11 @@
     "pattern": "accordion-height-tween",
     "reducedMotionFallback": "static-final-state"
   },
-  "routeRestriction": "template.blog-post"
+  "routeRestriction": "template.blog-post",
+  "responsive": {
+    "measuredFrom": "src/components/sub/Article.jsx:159-188",
+    "phone": "FAQ list sits full-width, no side inset panel.",
+    "tablet": "Panel gets a rounded inset background (tablet:rounded-card) offset from the section edges (tablet:left-[-22px] tablet:right-[-22px]); questions get a slightly larger type size (tablet:text-faq-q); heading steps to tablet:text-h3-t.",
+    "desktop": "Layout switches from stacked to a two-column row (desktop:flex-row desktop:gap-0) with a fixed-width first column (desktop:w-px desktop:flex-1); heading steps to desktop:text-h3; outer padding widens (desktop:px-40)."
+  }
 }

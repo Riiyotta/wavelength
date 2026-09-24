@@ -47,5 +47,11 @@
   "motion": {
     "pattern": "viewport-gated-loop-tween",
     "reducedMotionFallback": "first-frame-static"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/Integrations.jsx:133-152",
+    "phone": "Icon-tile hero row sits with zero bottom padding (tablet:pb-0 rule; phone shares this floor), tight top padding.",
+    "tablet": "Content gap narrows to 30px (tablet:gap-[30px]); heading steps to tablet:text-title-t; decorative overlay gets a top-20 offset (tablet:top-20).",
+    "desktop": "Content gap widens to 80px (desktop:gap-20); heading steps to desktop:text-title with desktop:text-body-l; outer padding widens (desktop:px-40)."
   }
 }

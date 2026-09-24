@@ -68,5 +68,11 @@
   "motion": {
     "pattern": "sticky-scroll-spy",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/sub/Article.jsx:87-153",
+    "phone": "Single column: ToC is not laid out as a sidebar; body stacks full-width.",
+    "tablet": "Two-column layout begins (tablet:flex-row, tablet:gap-20): ToC becomes a fixed-width sidebar (tablet:w-px tablet:flex-1) beside the body.",
+    "desktop": "Same two-column structure as tablet, with wider outer padding (desktop:px-40) and a larger heading scale (desktop:text-h3 vs tablet:text-h3-t)."
   }
 }

@@ -110,23 +110,42 @@ design-repo made up:
   `motion.pattern` plus a required `reducedMotionFallback`
   (`static-final-state` for springs/tweens, `first-frame-static` for loops).
 
+## Responsive contract
+
+Every one of the 32 `sections/*.json` files also carries a `responsive` block
+(`measuredFrom` + `phone`/`tablet`/`desktop` descriptions), cited to the same
+real Tailwind breakpoint classes (`tablet:`/`desktop:`-prefixed) as the
+section's own `measuredFrom` evidence — e.g. `content.blog-grid` documents
+`grid-cols-1 → tablet:grid-cols-2 → desktop:grid-cols-3`, cited to
+`Blogs.jsx:105-116`. Two sections (`shell.announcement-bar`,
+`shell.cookie-banner`) and one (`content.legal-prose`) are explicitly
+documented as uniform across breakpoints — a real, checked absence of
+responsive classes in their cited range, not an unfilled field. This is a
+section-contract-level field (like `measuredFrom`/`purpose`/`constraints`),
+not a per-PageSpec-instance field, since responsive behavior here is fixed by
+the section's own implementation rather than authored per page instance.
+`extraction/verify_all.py`'s citation-range check validates
+`responsive.measuredFrom` exactly like every other citation in this repo —
+proven with an injected-bad-citation scratch test, not just asserted to work.
+
 ## Verification
 
 Run `python3 extraction/verify_all.py` from inside this folder. It performs, in
 order: allowlist parity, asset-role parity, allowlistVersion parity, manifest
-counts recompute + route-coverage check, citation-range validity (internal
-hard-fail, sibling-app soft-warn when the sibling app tree isn't present),
-`registry.manifest.json` entryPoints self-containment, an absolute-local-path
-sweep, Draft-07 schema validation of the bundled example, the semantic
-validator, and the full adversarial suite — all in one command, with real
-pass/fail output.
+counts recompute + route-coverage check, citation-range validity (every
+top-level `measuredFrom` and every section's `responsive.measuredFrom`;
+internal hard-fail, sibling-app soft-warn when the sibling app tree isn't
+present), `registry.manifest.json` entryPoints self-containment, an
+absolute-local-path sweep, Draft-07 schema validation of the bundled example,
+the semantic validator, and the full adversarial suite — all in one command,
+with real pass/fail output.
 
 ## Packaging note
 
-This project has **no git repository** (`git rev-parse` finds none at the
-project root) — there is nothing to gitignore against today. If a git repo is
-initialized here later, add `design-repo/design-repo.zip` (and any future
-regenerated zip of this kind) to `.gitignore` before the first commit — a
-tracked zip artifact goes stale the moment this folder changes again, and
-whoever clones the repo would get two disagreeing copies of the same
-design-repo in one package.
+This project now has a real git repository (initialized and pushed to
+`https://github.com/Riiyotta/wavelength-clone` this session), and its
+`.gitignore` already lists `design-repo.zip` by name — the zip is
+regenerated fresh from this folder and is never committed alongside it,
+per the note above and this repo's own build guidance. Regenerate it with
+the CLI `zip` tool (not Finder/Archive Utility, which leaves `__MACOSX`/
+`.DS_Store` entries) any time this folder changes.

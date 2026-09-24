@@ -67,5 +67,11 @@
     "pattern": "loop-rive-or-video",
     "reducedMotionFallback": "first-frame-static"
   },
-  "homeRouteOnly": true
+  "homeRouteOnly": true,
+  "responsive": {
+    "measuredFrom": "src/components/ProductOverview.jsx:1-148",
+    "phone": "Media elements are laid out in-flow (bare/tablet defaults), each card full width, no CSS grid.",
+    "tablet": "Media elements switch to absolute positioning within their card for the overlap effect (tablet:absolute tablet:top-0 tablet:right-0 tablet:w-[80%] or similar per-item overrides); heading steps to tablet:text-h3-t.",
+    "desktop": "Whole section switches to an explicit CSS grid (desktop:grid desktop:grid-cols-[repeat(...)] desktop:grid-rows-[repeat(...)]) with individual cards spanning multiple columns/rows (desktop:col-span-2, desktop:col-span-3) -- a structurally different layout mode from phone/tablet's stacked-card approach, not just a resize."
+  }
 }

@@ -30,5 +30,11 @@
   "motion": {
     "pattern": "in-view-once-spring",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/About.jsx:94-174",
+    "phone": "Card and background track are stacked in a fixed-position box; sticker corner decorations scaled down.",
+    "tablet": "Card padding increases (tablet:px-10 tablet:py-[60px]); background track box gets a fixed offset (tablet:top-[219px] tablet:h-[313.8px]) instead of the phone's percentage-based centering; heading steps to tablet:text-h4-t.",
+    "desktop": "Track box offset changes again to a larger fixed value (desktop:top-[255.7px] desktop:h-[366.3px]); heading steps to desktop:text-h4 with desktop:text-body-l for body copy."
   }
 }

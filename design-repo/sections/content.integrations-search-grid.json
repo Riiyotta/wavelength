@@ -71,5 +71,11 @@
   "motion": {
     "pattern": "reveal-stagger-plus-hover",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/Integrations.jsx:254-302",
+    "phone": "1-column card grid, search field full width.",
+    "tablet": "2-column card grid (tablet:grid-cols-2); search field capped at 440px width.",
+    "desktop": "3-column card grid (desktop:grid-cols-3); heading scale steps up (desktop:text-h4 vs tablet:text-h4-t)."
   }
 }

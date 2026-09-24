@@ -72,5 +72,11 @@
   "motion": {
     "pattern": "appear-spring",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/Contact.jsx:1-142",
+    "phone": "Form and headline stack full-width, tight bottom padding.",
+    "tablet": "Bottom padding grows substantially (tablet:pb-[220px]); headline/form column caps at 480px (tablet:max-w-[480px]); heading steps to tablet:text-title-t.",
+    "desktop": "Padding becomes uniform on all sides (desktop:p-40, replacing the phone/tablet's asymmetric top/bottom values); heading steps to desktop:text-title with desktop:text-body-l."
   }
 }

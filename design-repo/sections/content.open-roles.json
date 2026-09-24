@@ -58,5 +58,11 @@
   "motion": {
     "pattern": "reveal-stagger",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/About.jsx:278-341",
+    "phone": "Role cards stack in 1 column; 'Learn More' affordance sits below the card content.",
+    "tablet": "2-column card grid (tablet:grid-cols-2); decorative LineColumn elements become visible (tablet:block) at the panel edges.",
+    "desktop": "Cards switch to a horizontal layout per-card (desktop:flex-row) with the 'Learn More' affordance pushed to a flexed end column (desktop:w-px desktop:flex-1); outer padding widens (desktop:px-40)."
   }
 }

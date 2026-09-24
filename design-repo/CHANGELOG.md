@@ -1,5 +1,39 @@
 # Changelog
 
+## 1.1.0 -- responsive contract added (recheck pass, this session)
+
+A recheck against this project's own build methodology's pre-ship checklist
+found one real gap: no section had a structured, cited `responsive` field
+("every section with materially different responsive behavior has a
+structured (not prose-only) responsive field, cited against real CSS") --
+responsive differences existed only as prose inside `measuredFrom`-cited
+component code, not as a machine-checkable field of their own.
+
+- Added a `responsive` block (`measuredFrom` + `phone`/`tablet`/`desktop`
+  descriptions) to all 32 `sections/*.json` files, each grounded in the real
+  `tablet:`/`desktop:`-prefixed Tailwind classes inside that section's own
+  already-cited `measuredFrom` range (auto-extracted and cross-checked
+  against the real source file, not hand-recalled).
+- 3 sections (`shell.announcement-bar`, `shell.cookie-banner`,
+  `content.legal-prose`) were confirmed, by direct inspection of their cited
+  range, to have **no** breakpoint-prefixed classes at all -- documented as
+  genuinely uniform across breakpoints, not left blank or guessed.
+- `extraction/verify_all.py`'s citation-range check was extended to also
+  validate every section's `responsive.measuredFrom` (previously it only
+  read each file's top-level `measuredFrom`) -- checked citation count rose
+  from 71 to 106. Proven to actually catch drift with a scratch-copy test
+  (an injected out-of-range citation on `hero.home.json` was confirmed to
+  fail the check, then the file was restored and reconfirmed clean) before
+  being trusted, per this design-repo's own established verification
+  discipline.
+- This field lives at the section-contract level (alongside `measuredFrom`/
+  `purpose`/`constraints`), not the per-PageSpec-instance schema layer --
+  responsive behavior here is fixed by the section's own implementation, not
+  authored per page instance, so `schema/pagespec.schema.json` and the
+  adversarial suite's generic instance synthesizer needed no changes; all 24
+  adversarial cases and both the in-place and isolated self-containment runs
+  were re-confirmed clean after this change.
+
 ## 1.0.0 -- initial build (this session)
 
 Built from scratch against the real `wavelength-clone` app source, `tailwind.config.js`,

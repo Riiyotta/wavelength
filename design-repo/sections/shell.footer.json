@@ -34,5 +34,11 @@
   "motion": {
     "pattern": "none",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/components/Footer.jsx:1-80",
+    "phone": "Columns stack vertically; logo and link columns full width.",
+    "tablet": "Top-level layout switches to a row (tablet:flex-row tablet:justify-between tablet:gap-0); logo sizes up (tablet:h-7 tablet:w-[168px]); a link column narrows to a flexed 1-unit width (tablet:w-px tablet:flex-1 tablet:order-none); bottom row switches to a row layout too (tablet:flex-row tablet:items-end tablet:justify-between).",
+    "desktop": "The 'company/legal' link column widens to a fixed 40% share (desktop:w-[40%], vs. tablet's 50%); outer padding widens (desktop:px-40) with taller vertical padding (desktop:py-[54px])."
   }
 }

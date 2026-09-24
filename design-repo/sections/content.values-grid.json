@@ -61,5 +61,11 @@
   "motion": {
     "pattern": "reveal-stagger",
     "reducedMotionFallback": "static-final-state"
+  },
+  "responsive": {
+    "measuredFrom": "src/pages/About.jsx:180-229",
+    "phone": "1-column grid (bare grid-cols-1); cards have no fixed height (auto height from content).",
+    "tablet": "2-column grid (tablet:grid-cols-2); cards get a fixed height (tablet:h-[190px]).",
+    "desktop": "4-column grid (desktop:grid-cols-4); card height increases (desktop:h-[220px]); heading steps to desktop:text-h4."
   }
 }
